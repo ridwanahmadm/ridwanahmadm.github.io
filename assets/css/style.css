@@ -44,3 +44,8 @@ body[data-page=works] .project-card{align-items:center}
 @media(max-width:900px){.stats-layout{grid-template-columns:1fr 1.5fr;gap:28px}.experience-collage{height:240px}.wordmark{font-size:22px}}
 @media(max-width:600px){.wordmark{font-size:18px;letter-spacing:-.7px}.site-header nav{gap:10px}.site-header nav .text-link{font-size:10px}.hero{padding-top:44px}.hero-title{margin:15px 0 38px}.hero:has(.hero-media)::after{background:linear-gradient(90deg,#edf7ffe8,#edf7ffd1)}.hero-media{object-position:center}.stats-layout{grid-template-columns:1fr;padding:24px 0 36px;gap:0}.stats-layout .card-impact{padding:12px 0 24px}.experience-collage{height:240px;margin:0 5px 0 0}.experience-mockup{border-width:4px}.experience-mockup:nth-child(2){margin-top:48px}.about-image{width:140px;height:180px;margin-left:18px}.learning h3{font-size:24px}.learning p{font-size:14px}}
 @media(prefers-reduced-motion:reduce){.scroll-projects>.project-card{position:static;transform:none!important}.experience-mockup{translate:none!important}}
+
+/* Hiring review: readable role context and a direct contact action. */
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:22px}.project-copy>.project-role{margin:0 0 18px;font-size:12px;color:var(--muted);line-height:1.6}.hero-actions .round-link{margin-bottom:0}
+
+.credential-links{display:flex;flex-direction:column;align-items:start;gap:16px;margin-top:22px}.credentials p{font-size:15px}

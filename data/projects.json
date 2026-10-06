@@ -13,52 +13,81 @@
       {
         "company": "Siiru Tech",
         "role": "Senior UI/UX Designer",
-        "detail": "2025–present · Muslim travel & lifestyle"
+        "detail": "Jul 2025–present · Muslim travel & lifestyle"
       },
       {
-        "company": "Hijra Group — Banking",
+        "company": "Muhajir Project",
+        "role": "Principal UI/UX Designer",
+        "detail": "Jun 2024–present · Concurrent role across digital products"
+      },
+      {
+        "company": "Hijra — Platform",
         "role": "Senior Product Designer",
-        "detail": "2021–2025 · Digital banking"
+        "detail": "Apr 2024–Mar 2025 · Digital banking"
+      },
+      {
+        "company": "Hijra",
+        "role": "Product Designer",
+        "detail": "Oct 2021–Apr 2024 · Acquisition & engagement"
       },
       {
         "company": "HSI — Shortener",
         "role": "Product Manager",
-        "detail": "Product strategy & delivery"
+        "detail": "Nov 2024–Jan 2026 · Product strategy & delivery"
       },
       {
         "company": "Skilvul",
         "role": "Product Development Mentor",
-        "detail": "2022 · Design mentorship"
+        "detail": "Aug–Sep 2022 · Four groups of six participants"
       },
       {
         "company": "ProcurA",
         "role": "UI/UX Designer",
-        "detail": "2019–2021 · SaaS e-procurement"
+        "detail": "Jul 2019–Oct 2021 · SaaS e-procurement"
+      },
+      {
+        "company": "Muslimroom",
+        "role": "UI/UX Designer Lead",
+        "detail": "Dec 2020–May 2021 · Mentored two designers"
       },
       {
         "company": "FishGo Indonesia",
         "role": "UX Designer — Freelance",
-        "detail": "2020 · Product design"
+        "detail": "Jan–Dec 2020 · Product design"
       },
       {
         "company": "Ministry of Public Works & Housing",
-        "role": "Mobile Developer",
-        "detail": "2019 · Mobile development"
+        "role": "Android Developer",
+        "detail": "Jul–Dec 2019 · Mobile development"
       }
     ],
-    "summary": "I also manage HSI’s Shortener product, bringing product strategy and delivery into my design practice.",
+    "summary": "Alongside hands-on product design, I have led design critiques, mentored junior designers, and managed HSI’s Shortener module.",
     "learning": {
-      "heading": "Always learning. Always sharing.",
-      "text": "I’m learning React to better understand implementation constraints and collaborate with developers. Mentoring junior designers also helps me explain ideas more clearly—a skill I want to keep developing as an educator."
+      "heading": "Clearer decisions. Stronger design teams.",
+      "text": "At Siiru, I mentor one junior designer and facilitate design critiques with cross-functional teams. Previously, I mentored two designers at Muslimroom and supported four groups of six participants at Skilvul. My focus is helping designers explain decisions and connecting design work with product priorities."
+    },
+    "credentials": {
+      "heading": "Education & UX research",
+      "education": "Master’s in Information Technology, Universitas Nasional · 2022–2024. Bachelor’s in Information Technology · 2016–2020.",
+      "links": [
+        {
+          "label": "RESHOT for simpler user experiences · JUITA, 2023",
+          "href": "https://jurnalnasional.ump.ac.id/index.php/JUITA/article/view/17643"
+        },
+        {
+          "label": "Sentiment analysis for Hijra UX research · SAGA, 2024",
+          "href": "https://journal.mediadigitalpublikasi.com/index.php/saga/article/view/240"
+        }
+      ]
     }
   },
   "footer": {
     "enabled": true,
     "label": "have something in mind?",
     "heading": "Think we’d make\na great team?",
-    "text": "I’m open to new opportunities and thoughtful collaborations. Tell me about your product challenge, and let’s explore how we can build something useful together.",
+    "text": "I’m exploring Lead Product Designer and Design Manager opportunities, alongside thoughtful collaborations. If your team needs clear product thinking, hands-on design, and support for growing designers, let’s talk.",
     "email": "hellomaarif@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/ridwanahmadm/",
+    "linkedin": "https://www.linkedin.com/in/ridwanam/",
     "emailLabel": "Let’s talk",
     "linkedinLabel": "LinkedIn",
     "note": "Good intentions. Useful work.",
@@ -66,91 +95,6 @@
     "emptyContact": "Collaboration details are coming soon."
   },
   "projects": [
-    {
-      "slug": "hijra-first-100k",
-      "title": "Helping Hijra reach its first 100K users",
-      "summary": "Finding a reason to join before banking features were ready.",
-      "subtitle": "Finding a reason to join before banking features were ready.",
-      "category": "Growth strategy",
-      "tags": [
-        "Growth strategy"
-      ],
-      "description": "With core banking features still awaiting approval, we explored Islamic lifestyle services that could make Hijra useful from day one. I helped translate user motivations into a product direction the team could build on.",
-      "impact": "100,000 users reached — a shared team milestone",
-      "impactNote": "Reported in the original portfolio; measurement scope awaiting confirmation.",
-      "role": "Product & interaction design · 2022",
-      "cover": {
-        "src": "assets/img/figma/acquisition-cover-restored.webp",
-        "alt": "Helping Hijra reach its first 100K users — original portfolio design",
-        "type": "image"
-      },
-      "image": "assets/img/figma/acquisition-cover-restored.webp",
-      "body": [
-        {
-          "heading": "The challenge",
-          "text": "Hijra’s early product had limited banking capabilities while regulatory approval was in progress. Our research showed that people had little reason to register when the features they expected were not yet available.",
-          "image": {
-            "src": "",
-            "alt": "",
-            "type": "image"
-          }
-        },
-        {
-          "heading": "Understanding the audience",
-          "text": "We focused on Muslim adults aged 20–35, including employees, entrepreneurs, and students. Interviews helped us explore which everyday needs the app could support beyond financial transactions.",
-          "image": {
-            "src": "assets/img/figma/1766-8177-imgImage100.webp",
-            "alt": "Research and ideation map for Hijra’s early product",
-            "type": "image"
-          }
-        },
-        {
-          "heading": "A broader reason to return",
-          "text": "The direction brought together daily prayers and dhikr, event information and recordings, faith and life guidance, and clearer prayer times. We also refined the Quran reading experience, including the move from Indo-Pak to Uthmani script.",
-          "image": {
-            "src": "assets/img/figma/1766-8177-imgImage1.webp",
-            "alt": "Hijra homepage with Islamic lifestyle services",
-            "type": "image"
-          }
-        },
-        {
-          "heading": "From ideas to delivery",
-          "text": "Product, design, and business development teams shaped and reviewed the direction together. The features were developed over a quarter, supported by partnerships and programming such as the Halfdeen series.",
-          "image": {
-            "src": "assets/img/figma/1766-8177-imgImage3.webp",
-            "alt": "Hijra question and answer service interface",
-            "type": "image"
-          }
-        },
-        {
-          "heading": "The outcome",
-          "text": "The original portfolio reports that Hijra reached its first 100,000 users. This was a shared acquisition milestone supported by product development and partnerships; it should not be attributed to design alone.",
-          "image": {
-            "src": "",
-            "alt": "",
-            "type": "image"
-          }
-        },
-        {
-          "heading": "What I learned",
-          "text": "When the expected product is constrained, research can reveal a different reason for people to use it. The strongest direction connected user motivations with what the team could realistically deliver. Some research details remain confidential.",
-          "image": {
-            "src": "",
-            "alt": "",
-            "type": "image"
-          }
-        }
-      ],
-      "gallery": [],
-      "links": [
-        {
-          "label": "View original Figma study",
-          "href": "https://www.figma.com/proto/6sJv9drZxaXjDptTn8Q7Vv/Portfolio-Ridwan-Ahmad-Maarif?node-id=1766-8177&starting-point-node-id=1766%3A8177"
-        }
-      ],
-      "published": true,
-      "order": 0
-    },
     {
       "slug": "hijra-ekyc",
       "title": "Making identity verification easier to get right",
@@ -163,7 +107,7 @@
       "description": "I refined Hijra’s e-KYC journey across several iterations, helping people capture their ID correctly and review the information extracted from it. The work balanced user guidance, verification technology, and compliance requirements.",
       "impact": "+16% automated approvals after the final iteration",
       "impactNote": "Reported in the original portfolio; measurement scope awaiting confirmation.",
-      "role": "Product & interaction design · 2022–2024",
+      "role": "Product & interaction design · 2022–2024; outcome reviewed February 2025",
       "cover": {
         "src": "assets/img/figma/ekyc-cover.webp",
         "alt": "Making identity verification easier to get right — original portfolio design",
@@ -240,7 +184,7 @@
         }
       ],
       "published": true,
-      "order": 1
+      "order": 0
     },
     {
       "slug": "hijra-homepage",
@@ -322,6 +266,91 @@
         {
           "label": "View original Figma study",
           "href": "https://www.figma.com/proto/6sJv9drZxaXjDptTn8Q7Vv/Portfolio-Ridwan-Ahmad-Maarif?node-id=1135-15343&starting-point-node-id=1135%3A15343"
+        }
+      ],
+      "published": true,
+      "order": 1
+    },
+    {
+      "slug": "hijra-first-100k",
+      "title": "Helping Hijra reach its first 100K users",
+      "summary": "Finding a reason to join before banking features were ready.",
+      "subtitle": "Finding a reason to join before banking features were ready.",
+      "category": "Growth strategy",
+      "tags": [
+        "Growth strategy"
+      ],
+      "description": "With core banking features still awaiting approval, we explored Islamic lifestyle services that could make Hijra useful from day one. I helped translate user motivations into a product direction the team could build on.",
+      "impact": "100,000 users reached — a shared team milestone",
+      "impactNote": "Reported in the original portfolio; measurement scope awaiting confirmation.",
+      "role": "Product & interaction design · 2022",
+      "cover": {
+        "src": "assets/img/figma/acquisition-cover-restored.webp",
+        "alt": "Restored visual of Hijra’s Islamic lifestyle features, based on the original portfolio cover",
+        "type": "image"
+      },
+      "image": "assets/img/figma/acquisition-cover-restored.webp",
+      "body": [
+        {
+          "heading": "The challenge",
+          "text": "Hijra’s early product had limited banking capabilities while regulatory approval was in progress. Our research showed that people had little reason to register when the features they expected were not yet available.",
+          "image": {
+            "src": "",
+            "alt": "",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "Understanding the audience",
+          "text": "We focused on Muslim adults aged 20–35, including employees, entrepreneurs, and students. Interviews helped us explore which everyday needs the app could support beyond financial transactions.",
+          "image": {
+            "src": "assets/img/figma/1766-8177-imgImage100.webp",
+            "alt": "Research and ideation map for Hijra’s early product",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "A broader reason to return",
+          "text": "The direction brought together daily prayers and dhikr, event information and recordings, faith and life guidance, and clearer prayer times. We also refined the Quran reading experience, including the move from Indo-Pak to Uthmani script.",
+          "image": {
+            "src": "assets/img/figma/1766-8177-imgImage1.webp",
+            "alt": "Hijra’s recorded Islamic study video interface",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "From ideas to delivery",
+          "text": "Product, design, and business development teams shaped and reviewed the direction together. The features were developed over a quarter, supported by partnerships and programming such as the Halfdeen series.",
+          "image": {
+            "src": "assets/img/figma/1766-8177-imgImage3.webp",
+            "alt": "Hijra question and answer service interface",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "The outcome",
+          "text": "The original portfolio reports that Hijra reached its first 100,000 users. This was a shared acquisition milestone supported by product development and partnerships; it should not be attributed to design alone.",
+          "image": {
+            "src": "",
+            "alt": "",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "What I learned",
+          "text": "When the expected product is constrained, research can reveal a different reason for people to use it. The strongest direction connected user motivations with what the team could realistically deliver. Some research details remain confidential.",
+          "image": {
+            "src": "",
+            "alt": "",
+            "type": "image"
+          }
+        }
+      ],
+      "gallery": [],
+      "links": [
+        {
+          "label": "View original Figma study",
+          "href": "https://www.figma.com/proto/6sJv9drZxaXjDptTn8Q7Vv/Portfolio-Ridwan-Ahmad-Maarif?node-id=1766-8177&starting-point-node-id=1766%3A8177"
         }
       ],
       "published": true,
@@ -678,9 +707,9 @@
   ],
   "schemaVersion": 2,
   "seo": {
-    "title": "Ridwan Ahmad Maarif — Product Designer",
+    "title": "Ridwan Ahmad Maarif — Senior Product Designer",
     "description": "Ridwan Ahmad Ma’arif is a Senior Product Designer and design mentor in Jakarta. Explore banking, operational interface, and product design case studies.",
-    "worksTitle": "All My Favorite Works — Ridwan Ahmad Maarif"
+    "worksTitle": "Selected Work — Ridwan Ahmad Maarif"
   },
   "brand": {
     "name": "Hi! I'm Ridwan",
@@ -716,8 +745,8 @@
   "hero": {
     "enabled": true,
     "headline": "design for growth.\nbuilt around people.",
-    "role": "Senior UI/UX Product Designer",
-    "subtitle": "I’m Ridwan Ahmad Ma’arif, a Senior Product Designer and design mentor based in Jakarta. I help teams turn complex problems into clear, useful experiences.",
+    "role": "Senior Product Designer & Mentor · Jakarta",
+    "subtitle": "I’m Ridwan Ahmad Ma’arif. With 7+ years across digital banking, lifestyle, and SaaS, I help teams turn user needs and business constraints into clear product decisions—and support designers through mentoring.",
     "ctaLabel": "explore selected work",
     "ctaLink": "#work",
     "note": "Product thinking. Thoughtful execution.",
@@ -726,7 +755,9 @@
       "src": "",
       "alt": "",
       "type": "image"
-    }
+    },
+    "contactLabel": "Get in touch",
+    "contactLink": "#contact"
   },
   "marquee": {
     "enabled": true,
@@ -771,7 +802,7 @@
     "enabled": true,
     "label": "selected work",
     "headline": "real problems.\nconsidered solutions.",
-    "text": "Selected work in digital banking, operational tools, and design mentorship. Explore the decisions behind each experience.",
+    "text": "Explore the problems, my contribution, and the decisions behind each project. Banking case studies lead the collection; explorations and mentorship are clearly identified.",
     "featuredLimit": 6,
     "ctaIntro": "There’s more to the story.",
     "ctaLabel": "all my favorite works",
@@ -795,6 +826,7 @@
     "dummy": "DUMMY · NOT VERIFIED",
     "preview": "Draft preview — not published",
     "home": "Home",
-    "unavailableImage": "Image unavailable"
+    "unavailableImage": "Image unavailable",
+    "projectPermalink": "Direct link to this case study"
   }
 }

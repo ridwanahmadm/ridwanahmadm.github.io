@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ridwanahmadm.github.io/sitemap.xml
