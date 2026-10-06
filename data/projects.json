@@ -80,11 +80,11 @@
       "impactNote": "Reported in the original portfolio; measurement scope awaiting confirmation.",
       "role": "Product & interaction design · 2022",
       "cover": {
-        "src": "assets/img/figma/acquisition-cover-hires.webp",
+        "src": "assets/img/figma/acquisition-cover-restored.webp",
         "alt": "Helping Hijra reach its first 100K users — original portfolio design",
         "type": "image"
       },
-      "image": "assets/img/figma/acquisition-cover-hires.webp",
+      "image": "assets/img/figma/acquisition-cover-restored.webp",
       "body": [
         {
           "heading": "The challenge",
@@ -659,7 +659,7 @@
           "heading": "Featured services",
           "text": "A motion exploration introduces featured banking services. These are prototype studies; static previews are shown here. Open the original Figma prototype to explore the interactions.",
           "image": {
-            "src": "assets/img/figma/acquisition-cover.webp",
+            "src": "assets/img/figma/acquisition-cover-restored.webp",
             "alt": "Hijra featured lifestyle services",
             "type": "image"
           }
