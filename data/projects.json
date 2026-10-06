@@ -1,0 +1,944 @@
+{
+  "about": {
+    "enabled": true,
+    "label": "a little about me",
+    "headline": "from understanding\nto meaningful progress.",
+    "text": "I’m a product designer with 7+ years of experience across banking, digital lifestyle, and SaaS e-procurement. I connect user needs with business goals, then work with product and engineering teams to turn that understanding into practical design decisions.",
+    "image": {
+      "src": "assets/img/ridwan-about-sky.jpg",
+      "alt": "Ridwan smiling with his arms folded, wearing a white polo against a soft sky-blue background",
+      "type": "image"
+    },
+    "experience": [
+      {
+        "company": "Siiru Tech",
+        "role": "Senior UI/UX Designer",
+        "detail": "2025–present · Muslim travel & lifestyle"
+      },
+      {
+        "company": "Hijra Group — Banking",
+        "role": "Senior Product Designer",
+        "detail": "2021–2025 · Digital banking"
+      },
+      {
+        "company": "HSI — Shortener",
+        "role": "Product Manager",
+        "detail": "Product strategy & delivery"
+      },
+      {
+        "company": "Skilvul",
+        "role": "Product Development Mentor",
+        "detail": "2022 · Design mentorship"
+      },
+      {
+        "company": "ProcurA",
+        "role": "UI/UX Designer",
+        "detail": "2019–2021 · SaaS e-procurement"
+      },
+      {
+        "company": "FishGo Indonesia",
+        "role": "UX Designer — Freelance",
+        "detail": "2020 · Product design"
+      },
+      {
+        "company": "Ministry of Public Works & Housing",
+        "role": "Mobile Developer",
+        "detail": "2019 · Mobile development"
+      }
+    ],
+    "summary": "I also manage HSI’s Shortener product, bringing product strategy and delivery into my design practice.",
+    "learning": {
+      "heading": "Always learning. Always sharing.",
+      "text": "I’m learning React to better understand implementation constraints and collaborate with developers. Mentoring junior designers also helps me explain ideas more clearly—a skill I want to keep developing as an educator."
+    }
+  },
+  "footer": {
+    "enabled": true,
+    "label": "have something in mind?",
+    "heading": "Think we’d make\na great team?",
+    "text": "I’m open to new opportunities and thoughtful collaborations. Tell me about your product challenge, and let’s explore how we can build something useful together.",
+    "email": "hellomaarif@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/ridwanahmadm/",
+    "emailLabel": "Let’s talk",
+    "linkedinLabel": "LinkedIn",
+    "note": "Good intentions. Useful work.",
+    "backLabel": "back to top",
+    "emptyContact": "Collaboration details are coming soon."
+  },
+  "projects": [
+    {
+      "slug": "hijra-first-100k",
+      "title": "Helping Hijra reach its first 100K users",
+      "summary": "Finding a reason to join before banking features were ready.",
+      "subtitle": "Finding a reason to join before banking features were ready.",
+      "category": "Growth strategy",
+      "tags": [
+        "Growth strategy"
+      ],
+      "description": "With core banking features still awaiting approval, we explored Islamic lifestyle services that could make Hijra useful from day one. I helped translate user motivations into a product direction the team could build on.",
+      "impact": "100,000 users reached — a shared team milestone",
+      "impactNote": "Reported in the original portfolio; measurement scope awaiting confirmation.",
+      "role": "Product & interaction design · 2022",
+      "cover": {
+        "src": "assets/img/figma/acquisition-cover.webp",
+        "alt": "Helping Hijra reach its first 100K users — original portfolio design",
+        "type": "image"
+      },
+      "image": "assets/img/figma/acquisition-cover.webp",
+      "body": [
+        {
+          "heading": "The challenge",
+          "text": "Hijra’s early product had limited banking capabilities while regulatory approval was in progress. Our research showed that people had little reason to register when the features they expected were not yet available.",
+          "image": {
+            "src": "",
+            "alt": "",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "Understanding the audience",
+          "text": "We focused on Muslim adults aged 20–35, including employees, entrepreneurs, and students. Interviews helped us explore which everyday needs the app could support beyond financial transactions.",
+          "image": {
+            "src": "assets/img/figma/1766-8177-imgImage100.webp",
+            "alt": "Research and ideation map for Hijra’s early product",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "A broader reason to return",
+          "text": "The direction brought together daily prayers and dhikr, event information and recordings, faith and life guidance, and clearer prayer times. We also refined the Quran reading experience, including the move from Indo-Pak to Uthmani script.",
+          "image": {
+            "src": "assets/img/figma/1766-8177-imgImage1.webp",
+            "alt": "Hijra homepage with Islamic lifestyle services",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "From ideas to delivery",
+          "text": "Product, design, and business development teams shaped and reviewed the direction together. The features were developed over a quarter, supported by partnerships and programming such as the Halfdeen series.",
+          "image": {
+            "src": "assets/img/figma/1766-8177-imgImage3.webp",
+            "alt": "Hijra question and answer service interface",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "The outcome",
+          "text": "The original portfolio reports that Hijra reached its first 100,000 users. This was a shared acquisition milestone supported by product development and partnerships; it should not be attributed to design alone.",
+          "image": {
+            "src": "",
+            "alt": "",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "What I learned",
+          "text": "When the expected product is constrained, research can reveal a different reason for people to use it. The strongest direction connected user motivations with what the team could realistically deliver. Some research details remain confidential.",
+          "image": {
+            "src": "",
+            "alt": "",
+            "type": "image"
+          }
+        }
+      ],
+      "gallery": [],
+      "links": [
+        {
+          "label": "View original Figma study",
+          "href": "https://www.figma.com/proto/6sJv9drZxaXjDptTn8Q7Vv/Portfolio-Ridwan-Ahmad-Maarif?node-id=1766-8177&starting-point-node-id=1766%3A8177"
+        }
+      ],
+      "published": true,
+      "order": 0
+    },
+    {
+      "slug": "hijra-ekyc",
+      "title": "Making identity verification easier to get right",
+      "summary": "Clearer guidance, fewer avoidable verification errors.",
+      "subtitle": "Clearer guidance, fewer avoidable verification errors.",
+      "category": "Banking onboarding",
+      "tags": [
+        "Banking onboarding"
+      ],
+      "description": "I refined Hijra’s e-KYC journey across several iterations, helping people capture their ID correctly and review the information extracted from it. The work balanced user guidance, verification technology, and compliance requirements.",
+      "impact": "+16% automated approvals after the final iteration",
+      "impactNote": "Reported in the original portfolio; measurement scope awaiting confirmation.",
+      "role": "Product & interaction design · 2022–2024",
+      "cover": {
+        "src": "assets/img/figma/ekyc-cover.webp",
+        "alt": "Making identity verification easier to get right — original portfolio design",
+        "type": "image"
+      },
+      "image": "assets/img/figma/ekyc-cover.webp",
+      "body": [
+        {
+          "heading": "The challenge",
+          "text": "A low approval rate was pushing registrations into manual review and creating extra work for operations and customer support. The original study describes up to 100 registration and e-KYC support tickets per month. Users often trusted the OCR result without checking their identity details.",
+          "image": {
+            "src": "assets/img/figma/969-356-imgImage10.webp",
+            "alt": "Original Hijra e-KYC flow",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "2022: asking people to pause",
+          "text": "The first iteration introduced a five-second review countdown. Usability sessions were encouraging, but launch feedback showed that a timer alone did not make the extracted information clear enough. The original study reports a partially masked improvement of 6.x%; I have not presented it as an exact metric.",
+          "image": {
+            "src": "assets/img/figma/969-356-imgImage.webp",
+            "alt": "First iteration of identity data review",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "2023: making review explicit",
+          "text": "I removed the timer, brought personal details onto the review screen, added a confirmation sheet, and clarified the ID photo frame. The study reports a 13% increase in automated approvals and no user complaints about this flow from Q2 to Q4.",
+          "image": {
+            "src": "assets/img/figma/969-356-imgImage21.webp",
+            "alt": "Second iteration with data review and confirmation",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "2024: helping users recover",
+          "text": "Changes to the OCR service introduced new issues, and regulatory constraints limited vendor changes. I redesigned capture guidance for ID photos and selfies, added explicit field confirmation, and made failure feedback and resubmission clearer. Repeated failures moved to manual review after three attempts.",
+          "image": {
+            "src": "assets/img/figma/969-356-imgImage22.webp",
+            "alt": "Updated photo capture and verification guidance",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "The reported outcome",
+          "text": "The final iteration launched at the end of Q4 2024. By February 2025, the study reports a 16% increase in automated approvals. The overview also cites 35%, but does not explain how the figures relate; the final-iteration result is shown here pending confirmation.",
+          "image": {
+            "src": "",
+            "alt": "",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "What I learned",
+          "text": "People need clear ways to check technology’s output. Improving the journey meant working with product, engineering, operations, and compliance, while recognizing where the verification service itself constrained the experience.",
+          "image": {
+            "src": "",
+            "alt": "",
+            "type": "image"
+          }
+        }
+      ],
+      "gallery": [
+        {
+          "src": "assets/img/figma/969-356-imgImage24.webp",
+          "alt": "Help and resubmission screens for identity verification",
+          "type": "image"
+        }
+      ],
+      "links": [
+        {
+          "label": "View original Figma study",
+          "href": "https://www.figma.com/proto/6sJv9drZxaXjDptTn8Q7Vv/Portfolio-Ridwan-Ahmad-Maarif?node-id=969-356&starting-point-node-id=969%3A356"
+        }
+      ],
+      "published": true,
+      "order": 1
+    },
+    {
+      "slug": "hijra-homepage",
+      "title": "A clearer homepage for everyday banking",
+      "summary": "Putting useful actions where people can find them.",
+      "subtitle": "Putting useful actions where people can find them.",
+      "category": "Product redesign",
+      "tags": [
+        "Product redesign"
+      ],
+      "description": "Hijra’s homepage had grown crowded as teams added competing features and messages. I reshaped its hierarchy to make banking actions, benefits, and relevant services easier to discover.",
+      "impact": "+12% monthly transactional users",
+      "impactNote": "Reported in the original portfolio; measurement scope awaiting confirmation.",
+      "role": "Product & interaction design · 2023",
+      "cover": {
+        "src": "assets/img/figma/homepage-cover.webp",
+        "alt": "A clearer homepage for everyday banking — original portfolio design",
+        "type": "image"
+      },
+      "image": "assets/img/figma/homepage-cover.webp",
+      "body": [
+        {
+          "heading": "The challenge",
+          "text": "The homepage had become a collection of competing widgets. Important promotions sat low on the page, oversized components used valuable space, and users did not always understand the benefits available to them.",
+          "image": {
+            "src": "",
+            "alt": "",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "Listening before rearranging",
+          "text": "We interviewed employees and entrepreneurs aged 25–35 with medium to high digital confidence and account balances of up to IDR 5 million. Their feedback pointed to unclear benefits, weak prompts to act, and difficulty finding useful features.",
+          "image": {
+            "src": "assets/img/figma/1135-15343-imgImage90.webp",
+            "alt": "Research synthesis and homepage mapping",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "A shared hierarchy",
+          "text": "Cross-functional ideation and four design critique sessions helped align competing priorities. The new structure grouped core banking actions, featured services, campaigns, prayer times, and spiritual wellbeing in a clearer order.",
+          "image": {
+            "src": "assets/img/figma/1135-15343-imgImage71.webp",
+            "alt": "Homepage information architecture exploration",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "Making benefits visible",
+          "text": "I kept essential banking actions central and brought relevant campaigns into view earlier. Small interaction cues, including the free-transfer treatment, helped communicate benefits without adding more clutter.",
+          "image": {
+            "src": "assets/img/figma/1135-15343-imgImage91.webp",
+            "alt": "Revised Hijra homepage and feature hierarchy",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "The reported outcome",
+          "text": "The detailed study reports a 12% increase in monthly transactional users and an 8% increase in engagement time. The summary instead labels the 8% result as retention, so its definition still needs confirmation. Awareness also improved in follow-up feedback, without a stated numerical result.",
+          "image": {
+            "src": "",
+            "alt": "",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "What I learned",
+          "text": "Good information hierarchy depends on agreement about what matters. Bringing stakeholders into the critique process helped turn competing requests into a more coherent experience.",
+          "image": {
+            "src": "",
+            "alt": "",
+            "type": "image"
+          }
+        }
+      ],
+      "gallery": [],
+      "links": [
+        {
+          "label": "View original Figma study",
+          "href": "https://www.figma.com/proto/6sJv9drZxaXjDptTn8Q7Vv/Portfolio-Ridwan-Ahmad-Maarif?node-id=1135-15343&starting-point-node-id=1135%3A15343"
+        }
+      ],
+      "published": true,
+      "order": 2
+    },
+    {
+      "slug": "pertamina-hmi",
+      "title": "Making fuel depot operations easier to read",
+      "summary": "A clearer interface for a demanding operational environment.",
+      "subtitle": "A clearer interface for a demanding operational environment.",
+      "category": "Operational interface",
+      "tags": [
+        "Operational interface"
+      ],
+      "description": "I redesigned a legacy HMI for Pertamina’s Banjarmasin fuel depot. The focus was on grouping related information, improving visual hierarchy, and making fuel-loading status easier to interpret.",
+      "impact": "Clearer operational hierarchy and loading feedback",
+      "impactNote": "",
+      "role": "Product & interaction design · Five-day brief",
+      "cover": {
+        "src": "assets/img/figma/pertamina-cover.webp",
+        "alt": "Making fuel depot operations easier to read — original portfolio design",
+        "type": "image"
+      },
+      "image": "assets/img/figma/pertamina-cover.webp",
+      "body": [
+        {
+          "heading": "The challenge",
+          "text": "The legacy interface used a dated visual style and scattered information. Operators had to work harder to understand the status of fuel-loading activities and the relationships between controls.",
+          "image": {
+            "src": "assets/img/figma/1254-2823-imgImage89.webp",
+            "alt": "Original Pertamina fuel depot HMI",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "Designing around the task",
+          "text": "I regrouped related information, reduced visual clutter, and used a dark interface to establish clearer contrast. The redesign emphasized what operators needed to understand and act on during loading.",
+          "image": {
+            "src": "assets/img/figma/1254-2823-imgImage88.webp",
+            "alt": "Redesigned Pertamina depot control interface",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "Motion as operational feedback",
+          "text": "The tanker illustration and loading animation made the loading process easier to follow. Motion supported system status rather than serving as decoration.",
+          "image": {
+            "src": "",
+            "alt": "",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "Delivery and limits",
+          "text": "The original portfolio describes a five-day brief and about 12 hours of design production. It does not provide measured usability or engagement results, so this case presents the design rationale rather than a quantified improvement.",
+          "image": {
+            "src": "",
+            "alt": "",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "What I learned",
+          "text": "Operational interfaces benefit from clear relationships between information, controls, and feedback. Their usefulness also depends on maintenance and validation with the people who operate them.",
+          "image": {
+            "src": "",
+            "alt": "",
+            "type": "image"
+          }
+        }
+      ],
+      "gallery": [],
+      "links": [
+        {
+          "label": "View original Figma study",
+          "href": "https://www.figma.com/proto/6sJv9drZxaXjDptTn8Q7Vv/Portfolio-Ridwan-Ahmad-Maarif?node-id=1254-2823&starting-point-node-id=1254%3A2823"
+        }
+      ],
+      "published": true,
+      "order": 3
+    },
+    {
+      "slug": "hijra-loyalty",
+      "title": "A more encouraging financial journey",
+      "summary": "Making progress visible, one milestone at a time.",
+      "subtitle": "Making progress visible, one milestone at a time.",
+      "category": "Interface exploration",
+      "tags": [
+        "Interface exploration"
+      ],
+      "description": "An exploration of Hijra’s loyalty experience, bringing financial journey levels and achievement feedback into a clearer interface. The concept pairs practical progress with warm, purposeful encouragement.",
+      "impact": "Exploration — no measured launch outcome",
+      "impactNote": "",
+      "role": "UI & interaction exploration",
+      "cover": {
+        "src": "assets/img/figma/loyalty-cover.webp",
+        "alt": "A more encouraging financial journey — original portfolio design",
+        "type": "image"
+      },
+      "image": "assets/img/figma/loyalty-cover.webp",
+      "body": [
+        {
+          "heading": "The concept",
+          "text": "The original design introduces financial journey levels: Hijrah, Hamasah, Istiqomah, and Qudwah. Each level explains a stage of progress in ethical banking.",
+          "image": {
+            "src": "",
+            "alt": "",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "Making the next step clear",
+          "text": "The level screen distinguishes completed milestones, the current stage, and the next goal. A progress indicator gives the achievement context rather than treating it as a standalone badge.",
+          "image": {
+            "src": "",
+            "alt": "",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "Celebrating progress",
+          "text": "A dedicated achievement screen recognizes reaching a new level and offers a clear path to the next goal. The language is encouraging and rooted in the values of the product.",
+          "image": {
+            "src": "",
+            "alt": "",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "Scope",
+          "text": "This is an interface exploration in the original portfolio. No research, launch, or performance evidence is provided, so no business impact is claimed.",
+          "image": {
+            "src": "",
+            "alt": "",
+            "type": "image"
+          }
+        }
+      ],
+      "gallery": [],
+      "links": [
+        {
+          "label": "View original Figma study",
+          "href": "https://www.figma.com/proto/6sJv9drZxaXjDptTn8Q7Vv/Portfolio-Ridwan-Ahmad-Maarif?node-id=1287-1300&starting-point-node-id=1287%3A1300"
+        }
+      ],
+      "published": true,
+      "order": 4
+    },
+    {
+      "slug": "compfest-ux-academy",
+      "title": "Supporting the next generation of UX designers",
+      "summary": "Judging at COMPFEST’s User Experience Academy.",
+      "subtitle": "Judging at COMPFEST’s User Experience Academy.",
+      "category": "Design mentorship",
+      "tags": [
+        "Design mentorship"
+      ],
+      "description": "I served as a judge at the User Experience Academy, part of COMPFEST at Universitas Indonesia. The event brought together emerging designers to develop and present their work.",
+      "impact": "5 teams of 5 participants",
+      "impactNote": "",
+      "role": "Judge · 2–18 August 2024",
+      "cover": {
+        "src": "assets/img/figma/compfest-cover.webp",
+        "alt": "Supporting the next generation of UX designers — original portfolio design",
+        "type": "image"
+      },
+      "image": "assets/img/figma/compfest-cover.webp",
+      "body": [
+        {
+          "heading": "The event",
+          "text": "COMPFEST is an annual event organized by students from the Faculty of Computer Science at Universitas Indonesia. The 2024 User Experience Academy ran from 2 to 18 August and included five teams, each with five participants.",
+          "image": {
+            "src": "assets/img/figma/1162-4404-imgImage2.webp",
+            "alt": "User Experience Academy team and judges announcement",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "My contribution",
+          "text": "I contributed as a judge, bringing my product design experience into the evaluation of participants’ work. This entry records that contribution rather than claiming a measured educational outcome.",
+          "image": {
+            "src": "assets/img/figma/1162-4404-imgImage1.webp",
+            "alt": "COMPFEST 2024 judging panel",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "Participation certificate",
+          "text": "The certificate below documents my role as a judge at COMPFEST 16.",
+          "image": {
+            "src": "assets/img/figma/1162-4404-imgImage82.webp",
+            "alt": "Certificate for Ridwan’s role as a COMPFEST UX Academy judge",
+            "type": "image"
+          }
+        }
+      ],
+      "gallery": [],
+      "links": [
+        {
+          "label": "Verify participation certificate",
+          "href": "https://verify.compfest.id/cf-2024-01948cda-8466-7000-aa25-a553a5f160a9"
+        },
+        {
+          "label": "View original Figma study",
+          "href": "https://www.figma.com/proto/6sJv9drZxaXjDptTn8Q7Vv/Portfolio-Ridwan-Ahmad-Maarif?node-id=1162-4404&starting-point-node-id=1162%3A4404"
+        }
+      ],
+      "published": true,
+      "order": 5
+    },
+    {
+      "slug": "qurban-plus",
+      "title": "Exploring a clearer Qurban Plus website",
+      "summary": "A considered web experience for qurban services.",
+      "subtitle": "A considered web experience for qurban services.",
+      "category": "Website exploration",
+      "tags": [
+        "Website exploration"
+      ],
+      "description": "A visual exploration of the Qurban Plus website, showing how service information, product choices, and brand storytelling can work together. The original portfolio includes a homepage concept and a longer reference design.",
+      "impact": "Exploration — no measured launch outcome",
+      "impactNote": "",
+      "role": "UI design exploration",
+      "cover": {
+        "src": "assets/img/figma/qubus-cover.webp",
+        "alt": "Exploring a clearer Qurban Plus website — original portfolio design",
+        "type": "image"
+      },
+      "image": "assets/img/figma/qubus-cover.webp",
+      "body": [
+        {
+          "heading": "The exploration",
+          "text": "The design explores how Qurban Plus can introduce its qurban offering and help visitors understand the service. The presentation combines a clear opening message with product information and supporting imagery.",
+          "image": {
+            "src": "",
+            "alt": "",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "Homepage concept",
+          "text": "This is the proposed homepage treatment shown in the original portfolio.",
+          "image": {
+            "src": "assets/img/figma/1403-747-imgImage.webp",
+            "alt": "Qurban Plus homepage exploration",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "Reference experience",
+          "text": "The original study also includes this longer website reference for comparison.",
+          "image": {
+            "src": "assets/img/figma/1403-747-imgBefore1.webp",
+            "alt": "Qurban Plus website reference",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "Scope",
+          "text": "This is a visual exploration. The original study does not include research findings or launch metrics, so no business impact is claimed.",
+          "image": {
+            "src": "",
+            "alt": "",
+            "type": "image"
+          }
+        }
+      ],
+      "gallery": [],
+      "links": [
+        {
+          "label": "View original Figma study",
+          "href": "https://www.figma.com/proto/6sJv9drZxaXjDptTn8Q7Vv/Portfolio-Ridwan-Ahmad-Maarif?node-id=1403-747&starting-point-node-id=1403%3A747"
+        }
+      ],
+      "published": true,
+      "order": 6
+    },
+    {
+      "slug": "interaction-studies",
+      "title": "Small interactions, clearer feedback",
+      "summary": "Figma motion explorations across product and operational interfaces.",
+      "subtitle": "Figma motion explorations across product and operational interfaces.",
+      "category": "Interaction studies",
+      "tags": [
+        "Interaction studies"
+      ],
+      "description": "A collection of interaction studies from my original portfolio. Each explores a small moment of feedback, recognition, or discovery within a larger product experience.",
+      "impact": "5 interaction studies",
+      "impactNote": "",
+      "role": "Interaction design · Figma prototypes",
+      "cover": {
+        "src": "assets/img/figma/pertamina-cover.webp",
+        "alt": "Small interactions, clearer feedback — original portfolio design",
+        "type": "image"
+      },
+      "image": "assets/img/figma/pertamina-cover.webp",
+      "body": [
+        {
+          "heading": "Pertamina depot",
+          "text": "Loading feedback explores how animation can communicate operational progress in a fuel depot interface.",
+          "image": {
+            "src": "assets/img/figma/1254-2823-imgImage88.webp",
+            "alt": "Pertamina HMI with loading feedback",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "AI chatbot",
+          "text": "An animated chatbot character explores a more approachable entry point for conversation.",
+          "image": {
+            "src": "assets/img/figma/chatbot.svg",
+            "alt": "Original Hijra AI chatbot character from the Figma interaction study",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "Hijra bank transfer",
+          "text": "A free-transfer interaction draws attention to a useful banking benefit.",
+          "image": {
+            "src": "assets/img/figma/homepage-cover.webp",
+            "alt": "Hijra homepage highlighting the free-transfer benefit",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "Hijra loyalty",
+          "text": "Achievement feedback recognizes progress in a financial journey.",
+          "image": {
+            "src": "assets/img/figma/loyalty-cover.webp",
+            "alt": "Hijra loyalty achievement exploration",
+            "type": "image"
+          }
+        },
+        {
+          "heading": "Featured services",
+          "text": "A motion exploration introduces featured banking services. These are prototype studies; static previews are shown here. Open the original Figma prototype to explore the interactions.",
+          "image": {
+            "src": "assets/img/figma/acquisition-cover.webp",
+            "alt": "Hijra featured lifestyle services",
+            "type": "image"
+          }
+        }
+      ],
+      "gallery": [],
+      "links": [
+        {
+          "label": "View original Figma study",
+          "href": "https://www.figma.com/proto/6sJv9drZxaXjDptTn8Q7Vv/Portfolio-Ridwan-Ahmad-Maarif?node-id=1446-1170&starting-point-node-id=1446%3A1170"
+        }
+      ],
+      "published": true,
+      "order": 7
+    },
+    {
+      "title": "Titip Doa (Entrust Dua)",
+      "subtitle": "Bringing hearts closer, wherever they are.",
+      "category": "Islamic Lifestyle Feature",
+      "image": "assets/img/titip-doa.svg",
+      "description": "Designing a personal, accessible way to entrust a prayer. A simple journey helps people share their hopes with trust and a sense of connection.",
+      "impact": "+42% weekly active users in the first quarter after launch [DUMMY]",
+      "slug": "titip-doa",
+      "summary": "Bringing hearts closer, wherever they are.",
+      "role": "Product design",
+      "tags": [
+        "Islamic Lifestyle Feature"
+      ],
+      "cover": {
+        "src": "assets/img/titip-doa.svg",
+        "alt": "Titip Doa (Entrust Dua) — concept interface preview",
+        "type": "image"
+      },
+      "gallery": [],
+      "body": [],
+      "links": [],
+      "order": 8,
+      "published": false
+    },
+    {
+      "title": "Tabung Umrah",
+      "subtitle": "A small step today. A meaningful journey tomorrow.",
+      "category": "Fintech Partnership",
+      "image": "assets/img/tabung-umrah.svg",
+      "description": "Connecting the intention to make a pilgrimage with a clearer savings experience. The design focuses on goals, savings progress, and the next useful step.",
+      "impact": "18,000+ savings pouches opened during the pilot [DUMMY]",
+      "slug": "tabung-umrah",
+      "summary": "A small step today. A meaningful journey tomorrow.",
+      "role": "Product design",
+      "tags": [
+        "Fintech Partnership"
+      ],
+      "cover": {
+        "src": "assets/img/tabung-umrah.svg",
+        "alt": "Tabung Umrah — concept interface preview",
+        "type": "image"
+      },
+      "gallery": [],
+      "body": [],
+      "links": [],
+      "order": 9,
+      "published": false
+    },
+    {
+      "title": "Plan Your Trip",
+      "subtitle": "Less planning. More possibilities.",
+      "category": "AI Product",
+      "image": "assets/img/plan-your-trip.svg",
+      "description": "Simplifying travel planning with AI assistance. The experience helps people build and adapt an itinerary while keeping their choices in their own hands.",
+      "impact": "3.2x increase in itinerary completion rate [DUMMY]",
+      "slug": "plan-your-trip",
+      "summary": "Less planning. More possibilities.",
+      "role": "Product design",
+      "tags": [
+        "AI Product"
+      ],
+      "cover": {
+        "src": "assets/img/plan-your-trip.svg",
+        "alt": "Plan Your Trip — concept interface preview",
+        "type": "image"
+      },
+      "gallery": [],
+      "body": [],
+      "links": [],
+      "order": 10,
+      "published": false
+    },
+    {
+      "title": "Siiru Design System",
+      "subtitle": "One shared language. A thousand possibilities.",
+      "category": "Design System",
+      "image": "assets/img/siiru-design-system.svg",
+      "description": "Bringing interface patterns and components into a shared design language. This foundation helps designers and developers collaborate with greater consistency.",
+      "impact": "60% faster design-to-development handoff [DUMMY]",
+      "slug": "siiru-design-system",
+      "summary": "One shared language. A thousand possibilities.",
+      "role": "Product design",
+      "tags": [
+        "Design System"
+      ],
+      "cover": {
+        "src": "assets/img/siiru-design-system.svg",
+        "alt": "Siiru Design System — concept interface preview",
+        "type": "image"
+      },
+      "gallery": [],
+      "body": [],
+      "links": [],
+      "order": 11,
+      "published": false
+    },
+    {
+      "title": "Mahabbati",
+      "subtitle": "Meaningful connections begin with intention.",
+      "category": "Islamic Matchmaking App",
+      "image": "assets/img/mahabbati.svg",
+      "description": "Exploring meaningful introductions grounded in intention and shared values. The design focuses on a clear, comfortable onboarding experience that respects privacy.",
+      "impact": "27% increase in onboarding completion rate [DUMMY]",
+      "slug": "mahabbati",
+      "summary": "Meaningful connections begin with intention.",
+      "role": "Product design",
+      "tags": [
+        "Islamic Matchmaking App"
+      ],
+      "cover": {
+        "src": "assets/img/mahabbati.svg",
+        "alt": "Mahabbati — concept interface preview",
+        "type": "image"
+      },
+      "gallery": [],
+      "body": [],
+      "links": [],
+      "order": 12,
+      "published": false
+    },
+    {
+      "title": "Bank Hijra — Acquisition Strategy",
+      "subtitle": "Making the first step feel right.",
+      "category": "Growth Strategy",
+      "image": "assets/img/bank-hijra.svg",
+      "description": "Designing an acquisition journey that connects campaign messaging with registration. The approach clarifies the value of the product and reduces friction in the first steps.",
+      "impact": "35% increase in qualified sign-ups within 90 days [DUMMY]",
+      "slug": "bank-hijra",
+      "summary": "Making the first step feel right.",
+      "role": "Product design",
+      "tags": [
+        "Growth Strategy"
+      ],
+      "cover": {
+        "src": "assets/img/bank-hijra.svg",
+        "alt": "Bank Hijra — Acquisition Strategy — concept interface preview",
+        "type": "image"
+      },
+      "gallery": [],
+      "body": [],
+      "links": [],
+      "order": 13,
+      "published": false
+    }
+  ],
+  "schemaVersion": 2,
+  "seo": {
+    "title": "Ridwan Ahmad Maarif — Product Designer",
+    "description": "Ridwan Ahmad Ma’arif is a Senior Product Designer and design mentor in Jakarta. Explore banking, operational interface, and product design case studies.",
+    "worksTitle": "All My Favorite Works — Ridwan Ahmad Maarif"
+  },
+  "brand": {
+    "name": "Hi! I'm Ridwan",
+    "fullName": "Ridwan Ahmad Maarif",
+    "favicon": {
+      "src": "assets/img/favicon.svg",
+      "alt": "Ridwan monogram",
+      "type": "image"
+    }
+  },
+  "navigation": [
+    {
+      "label": "home",
+      "href": "index.html#top"
+    },
+    {
+      "label": "about",
+      "href": "index.html#about"
+    },
+    {
+      "label": "work",
+      "href": "index.html#work"
+    },
+    {
+      "label": "contact",
+      "href": "#contact"
+    },
+    {
+      "label": "all works",
+      "href": "works.html"
+    }
+  ],
+  "hero": {
+    "enabled": true,
+    "headline": "design for growth.\nbuilt around people.",
+    "role": "Senior UI/UX Product Designer",
+    "subtitle": "I’m Ridwan Ahmad Ma’arif, a Senior Product Designer and design mentor based in Jakarta. I help teams turn complex problems into clear, useful experiences.",
+    "ctaLabel": "explore selected work",
+    "ctaLink": "#work",
+    "note": "Product thinking. Thoughtful execution.",
+    "scrollLabel": "scroll to explore",
+    "media": {
+      "src": "assets/img/figma/homepage-cover.webp",
+      "alt": "Hijra mobile banking interfaces designed by Ridwan",
+      "type": "image"
+    }
+  },
+  "marquee": {
+    "enabled": true,
+    "items": [
+      "product strategy",
+      "user experience",
+      "interaction design",
+      "design mentorship"
+    ],
+    "separator": "•"
+  },
+  "stats": {
+    "enabled": true,
+    "label": "experience in practice",
+    "items": [
+      {
+        "value": 7,
+        "prefix": "",
+        "suffix": "+ years",
+        "label": "of professional UI/UX and product design"
+      }
+    ],
+    "mockups": [
+      {
+        "src": "assets/img/figma/ekyc-cover.webp",
+        "alt": "Hijra identity verification interfaces",
+        "type": "image"
+      },
+      {
+        "src": "assets/img/figma/homepage-cover.webp",
+        "alt": "Hijra homepage redesign",
+        "type": "image"
+      },
+      {
+        "src": "assets/img/figma/pertamina-cover.webp",
+        "alt": "Pertamina fuel depot interface",
+        "type": "image"
+      }
+    ]
+  },
+  "work": {
+    "enabled": true,
+    "label": "selected work",
+    "headline": "real problems.\nconsidered solutions.",
+    "text": "Selected work in digital banking, operational tools, and design mentorship. Explore the decisions behind each experience.",
+    "featuredLimit": 6,
+    "ctaIntro": "There’s more to the story.",
+    "ctaLabel": "all my favorite works",
+    "ctaLink": "works.html"
+  },
+  "works": {
+    "label": "the project collection",
+    "headline": "work, explorations\n& everything between.",
+    "text": "Case studies, interface explorations, and interaction studies from my design practice."
+  },
+  "ui": {
+    "skip": "Skip to content",
+    "navigation": "Main navigation",
+    "viewProject": "Explore case study",
+    "closeProject": "Close project details",
+    "projectCount": "projects",
+    "emptyProjects": "New work is on its way.",
+    "loading": "Loading work…",
+    "error": "Content could not be loaded. Please try again.",
+    "retry": "Try again",
+    "dummy": "DUMMY · NOT VERIFIED",
+    "preview": "Draft preview — not published",
+    "home": "Home",
+    "unavailableImage": "Image unavailable"
+  }
+}
