@@ -7,8 +7,8 @@
 html:has(body.cms-body){scroll-behavior:auto}
 /* Annotation revision: media hero, experience collage, native scroll project sequence. */
 .wordmark{font-size:24px;letter-spacing:-1.1px;white-space:nowrap}
-.hero{padding-top:62px;background:#eaf5ff}
-.hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,#edf7fff5 0%,#edf7ffd9 43%,#edf7ff38 100%)}
+.hero{padding-top:62px;background:radial-gradient(ellipse at 88% 28%,#dcefff 0%,transparent 58%),linear-gradient(145deg,#f3faff 12%,#eaf5ff 70%,#edf8ff 100%)}
+.hero:has(.hero-media)::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,#edf7fff5 0%,#edf7ffd9 43%,#edf7ff38 100%)}
 .hero-media{opacity:.32;object-position:80% center;animation:none;transform:scale(1.06)}
 .hero-title{margin:34px 0 62px;max-width:1100px}
 .about-image{width:190px;height:240px;object-fit:cover;float:right;margin:8px 0 24px 32px;border-radius:12px;background:#eaf5ff}
@@ -42,5 +42,5 @@ body[data-page=works] .project-card{align-items:center}
  .scroll-projects>.project-card .project-image{align-self:center}
 }
 @media(max-width:900px){.stats-layout{grid-template-columns:1fr 1.5fr;gap:28px}.experience-collage{height:240px}.wordmark{font-size:22px}}
-@media(max-width:600px){.wordmark{font-size:18px;letter-spacing:-.7px}.site-header nav{gap:10px}.site-header nav .text-link{font-size:10px}.hero{padding-top:44px}.hero-title{margin:15px 0 38px}.hero::after{background:linear-gradient(90deg,#edf7ffe8,#edf7ffd1)}.hero-media{object-position:center}.stats-layout{grid-template-columns:1fr;padding:24px 0 36px;gap:0}.stats-layout .card-impact{padding:12px 0 24px}.experience-collage{height:240px;margin:0 5px 0 0}.experience-mockup{border-width:4px}.experience-mockup:nth-child(2){margin-top:48px}.about-image{width:140px;height:180px;margin-left:18px}.learning h3{font-size:24px}.learning p{font-size:14px}}
+@media(max-width:600px){.wordmark{font-size:18px;letter-spacing:-.7px}.site-header nav{gap:10px}.site-header nav .text-link{font-size:10px}.hero{padding-top:44px}.hero-title{margin:15px 0 38px}.hero:has(.hero-media)::after{background:linear-gradient(90deg,#edf7ffe8,#edf7ffd1)}.hero-media{object-position:center}.stats-layout{grid-template-columns:1fr;padding:24px 0 36px;gap:0}.stats-layout .card-impact{padding:12px 0 24px}.experience-collage{height:240px;margin:0 5px 0 0}.experience-mockup{border-width:4px}.experience-mockup:nth-child(2){margin-top:48px}.about-image{width:140px;height:180px;margin-left:18px}.learning h3{font-size:24px}.learning p{font-size:14px}}
 @media(prefers-reduced-motion:reduce){.scroll-projects>.project-card{position:static;transform:none!important}.experience-mockup{translate:none!important}}
