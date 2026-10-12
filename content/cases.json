@@ -1,0 +1,978 @@
+{
+  "_help": "Source for every page in /work. Edit here, then run: node tools/build.mjs. Writing rules live in DESIGN.md.",
+  "order": [
+    "siiru",
+    "hijra-ekyc",
+    "hijra-homepage",
+    "hijra-first-100k",
+    "pertamina-hmi",
+    "hijra-loyalty",
+    "interaction-studies",
+    "qurban-plus",
+    "compfest-ux-academy"
+  ],
+  "cases": {
+    "siiru": {
+      "title": "Siiru: one app for every step to Umrah",
+      "summary": "I design Siiru, a companion app for Muslims in Malaysia, Indonesia and Singapore. It brings 17 services together, from daily prayer and giving to booking a guide, a ride or travel insurance.",
+      "facts": [
+        [
+          "Role",
+          "Senior UI/UX Designer"
+        ],
+        [
+          "Years",
+          "2025 to now"
+        ],
+        [
+          "Team",
+          "Product, engineering, business and partners"
+        ],
+        [
+          "Scope",
+          "iOS, Android, web and film"
+        ]
+      ],
+      "cover": {
+        "plate": [
+          "mutawwif",
+          "home",
+          "senddua"
+        ],
+        "poster": "assets/media/siiru-showreel-poster.jpg",
+        "alt": "Three Siiru app screens: guide booking, home and Send Dua"
+      },
+      "sections": [
+        {
+          "heading": "The problem: Umrah planning is scattered",
+          "body": [
+            "Around 1.7 million Muslims from Southeast Asia travel to Makkah every year. Planning a self-organised Umrah can take 40 to 60 hours across five or more vendors for visas, hotels, transport, guides and insurance, and none of them stays with the pilgrim before, during and after the trip.",
+            "Siiru wants to be the one companion that does. My job is to make seventeen services feel like one calm product."
+          ]
+        },
+        {
+          "heading": "Most users are not travelling this year",
+          "body": [
+            "Most people who open an Umrah app are not flying soon. Their connection to Makkah is daily: prayer, giving, and sending a dua with a friend who is going. So we shaped the app around four modes instead of one booking funnel."
+          ],
+          "blocks": [
+            {
+              "type": "modes",
+              "items": [
+                [
+                  "Always",
+                  "Prayer times, giving and dua for everyone"
+                ],
+                [
+                  "Before",
+                  "Planning, saving and learning"
+                ],
+                [
+                  "During",
+                  "Guides, rides and worship in Makkah and Madinah"
+                ],
+                [
+                  "After",
+                  "Returning the duas people carried, and giving again"
+                ]
+              ]
+            },
+            {
+              "type": "note",
+              "text": "An app people already open every day is trusted by the time they plan a trip. That is why daily features lead the home screen."
+            }
+          ]
+        },
+        {
+          "heading": "Eight screens and the decision behind each",
+          "body": [
+            "These are recordings from the live app. Most of the flows are my designs, and I set the final visual style for all of them."
+          ],
+          "blocks": [
+            {
+              "type": "phones",
+              "items": [
+                [
+                  "home",
+                  "Home",
+                  "The next prayer and an AI travel assistant come first. Services sit one tap below."
+                ],
+                [
+                  "mutawwif",
+                  "Booking a mutawwif",
+                  "Experience, languages, rating, wheelchair support and price are on the card, so guides can be compared at a glance."
+                ],
+                [
+                  "transport",
+                  "Transport",
+                  "Seats and luggage space come before price, with a certified driver badge."
+                ],
+                [
+                  "plantrip",
+                  "Plan Your Trip",
+                  "Guided questions replace an empty prompt, and the AI shows the steps it takes."
+                ]
+              ]
+            },
+            {
+              "type": "phones",
+              "items": [
+                [
+                  "insurance",
+                  "Insurance claims",
+                  "Active protection, the claim deadline and three steps sit on the first screen."
+                ],
+                [
+                  "sadaqah",
+                  "Waqaf and sadaqah",
+                  "Each gift is a concrete item with a price and one Donate button."
+                ],
+                [
+                  "senddua",
+                  "Send Dua",
+                  "Pilgrims create a dua folder; friends add duas through a WhatsApp link."
+                ],
+                [
+                  "services",
+                  "Services",
+                  "Seventeen services grouped by intent, with New and Soon labels."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Making guide booking feel safe",
+          "body": [
+            "Booking a mutawwif means trusting a stranger with the most important days of your year. If comparing two guides means opening two profiles, people hesitate or leave the app to ask around on WhatsApp.",
+            "I put the trust signals people ask about on the card itself and kept Quick Book there too. To test it, I prepared a think-aloud usability study that covers finding the feature, choosing a guide, scheduling and checkout, scored with the System Usability Scale."
+          ]
+        },
+        {
+          "heading": "Designing AI that people trust",
+          "body": [
+            "Plan Your Trip turns a few answers into a complete Umrah itinerary. Two decisions shaped it. There is no empty prompt box, because most people have never planned a trip like this and do not know what to ask. And while the AI works, it shows its steps in plain words, such as finding places in Madinah and fitting prayer times, so the plan feels considered rather than generated."
+          ]
+        },
+        {
+          "heading": "The product film",
+          "body": [
+            "I directed and built a two-minute film in Remotion, so the video is a React project. One project renders five versions, each with its own language, currency and voice-over. Prices inside the recorded app screens are found with OCR and rewritten in RM or S$, and an automated check reviews all 19 scenes in every version before export."
+          ],
+          "blocks": [
+            {
+              "type": "film"
+            }
+          ]
+        },
+        {
+          "heading": "Beyond the app",
+          "body": [
+            "The same principles carry into Siiru's web presence. With AI as a pair programmer, I designed and built a new company profile and a public report that shows donors where their gifts went."
+          ],
+          "blocks": [
+            {
+              "type": "builds",
+              "items": [
+                [
+                  "https://ridwanahmadm.github.io/siiru-new-company-profile/",
+                  "assets/img/proto/siiru-new-company-profile.jpg",
+                  "Siiru company profile",
+                  "Bilingual company website"
+                ],
+                [
+                  "https://ridwanahmadm.github.io/charity-report-dashboard/",
+                  "assets/img/proto/charity-report-dashboard.jpg",
+                  "Siiru impact report",
+                  "Where donations went"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "How I work with the team",
+          "body": [
+            "Every new design or iteration at Siiru goes through critique with developers, the PM and the leadership team. Critique is where competing priorities become shared decisions; the booking flow is one design that changed because of it.",
+            "I also mentor a junior designer through weekly one-on-ones, tasks aimed at specific gaps, and a monthly team checkpoint that shows each designer their progress and pace."
+          ]
+        },
+        {
+          "heading": "Siiru's impact so far",
+          "body": [
+            "These are company figures, shared for scale. They belong to the whole team and its partners."
+          ],
+          "blocks": [
+            {
+              "type": "stats",
+              "items": [
+                [
+                  "251,000",
+                  "water bottles for Hajj pilgrims"
+                ],
+                [
+                  "12,500",
+                  "iftar packs at Masjidil Haram"
+                ],
+                [
+                  "17",
+                  "services live in the app"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "What I am learning",
+          "body": [
+            "Seventeen services can easily become seventeen competing priorities. The work that matters most is deciding what each person needs right now, and hiding the rest."
+          ]
+        }
+      ],
+      "part": "I designed most of the app's core flows and own its final visual style and design decisions, across app and web. I also made the product film, mentor a junior designer and run design critiques."
+    },
+    "hijra-ekyc": {
+      "title": "Making identity verification easier to get right",
+      "summary": "Three iterations of Hijra's ID check. Clearer capture guidance and an explicit review step moved more new customers to automatic approval instead of manual review.",
+      "facts": [
+        [
+          "Role",
+          "Product and interaction designer"
+        ],
+        [
+          "Years",
+          "2022 to 2024"
+        ],
+        [
+          "Team",
+          "PM, engineering, operations, compliance"
+        ],
+        [
+          "Outcome",
+          "+16% automated approvals"
+        ]
+      ],
+      "cover": {
+        "src": "assets/img/work/ekyc-cover.webp",
+        "alt": "Hijra e-KYC screens: ID capture, data review, selfie and result",
+        "w": 1800,
+        "h": 945
+      },
+      "sections": [
+        {
+          "heading": "The problem: people did not check what the OCR read",
+          "body": [
+            "Hijra's low approval rate pushed registrations into manual review, creating work for operations and support, with up to 100 registration and e-KYC tickets a month.",
+            "The cause was human. People trusted the OCR result and skipped checking the details it extracted from their ID. Errors that took seconds to fix turned into days of manual review."
+          ],
+          "blocks": [
+            {
+              "type": "image",
+              "src": "assets/img/work/969-356-imgImage10.webp",
+              "alt": "The original Hijra e-KYC flow from introduction to ID capture and data entry",
+              "w": 1800,
+              "h": 1031,
+              "caption": "The original flow: capture the ID, then a long form most people skimmed."
+            }
+          ]
+        },
+        {
+          "heading": "2022: a countdown before continuing",
+          "body": [
+            "The first iteration added a five-second review countdown. It tested well in moderated sessions, but in production a timer alone did not make the extracted data clearer. Slowing people down is not the same as helping them check."
+          ],
+          "blocks": [
+            {
+              "type": "image",
+              "src": "assets/img/work/969-356-imgImage.webp",
+              "alt": "First iteration of the identity data review screen",
+              "w": 1800,
+              "h": 1743,
+              "caption": "2022: a review screen with a short countdown."
+            }
+          ]
+        },
+        {
+          "heading": "2023: an explicit review step",
+          "body": [
+            "I removed the timer, brought the personal details onto the review screen, added a confirmation sheet and clarified the ID photo frame so captures were sharper from the start.",
+            "Automated approvals rose 13%, and we received no complaints about the flow from Q2 to Q4."
+          ],
+          "blocks": [
+            {
+              "type": "image",
+              "src": "assets/img/work/969-356-imgImage21.webp",
+              "alt": "Second iteration with an ID frame, data review and confirmation sheet",
+              "w": 1800,
+              "h": 881,
+              "caption": "2023: clearer frame, review, then a confirmation sheet."
+            }
+          ]
+        },
+        {
+          "heading": "2024: helping people recover from errors",
+          "body": [
+            "A change in the OCR service brought new errors, and regulation limited how quickly we could switch vendors. I redesigned around the constraint: capture guidance for both the ID and the selfie, field-by-field confirmation, and clear failure messages with an easy way to try again.",
+            "After three failed attempts, people are routed to manual review rather than stuck."
+          ],
+          "blocks": [
+            {
+              "type": "image",
+              "src": "assets/img/work/969-356-imgImage22.webp",
+              "alt": "Capture guidance for the ID photo, the selfie and the selfie with ID",
+              "w": 1800,
+              "h": 1033,
+              "caption": "2024: guided capture for the ID, the selfie and the selfie with ID."
+            },
+            {
+              "type": "image",
+              "src": "assets/img/work/969-356-imgImage24.webp",
+              "alt": "Tips screens comparing correct and incorrect ID and selfie photos",
+              "w": 1800,
+              "h": 1197,
+              "caption": "Tips that show a good and a bad photo before the camera opens."
+            }
+          ]
+        },
+        {
+          "heading": "Outcome",
+          "body": [
+            "The final iteration shipped at the end of Q4 2024. By February 2025, automated approvals were up 16%, with fewer customers waiting on manual review and less load on operations and support."
+          ]
+        },
+        {
+          "heading": "What I learned",
+          "body": [
+            "When software does the reading, design has to make checking easy. The best fixes came from working with operations and compliance, and from being honest about what the verification service could and could not do."
+          ]
+        }
+      ],
+      "note": "Results as reported in the original project study.",
+      "links": [
+        [
+          "View the original Figma study",
+          "https://www.figma.com/proto/6sJv9drZxaXjDptTn8Q7Vv/Portfolio-Ridwan-Ahmad-Maarif?node-id=969-356&starting-point-node-id=969%3A356"
+        ]
+      ],
+      "part": "I owned all three iterations, from capture guidance to review and recovery, working with the PM, engineers, operations and compliance."
+    },
+    "hijra-homepage": {
+      "title": "A clearer homepage for everyday banking",
+      "summary": "Hijra's home screen had grown crowded as teams added features and promotions. I rebuilt its hierarchy around the actions and benefits customers use most.",
+      "facts": [
+        [
+          "Role",
+          "Product and interaction designer"
+        ],
+        [
+          "Year",
+          "2023"
+        ],
+        [
+          "Team",
+          "PM, marketing, engineering, business"
+        ],
+        [
+          "Outcome",
+          "+12% monthly transactional users"
+        ]
+      ],
+      "cover": {
+        "src": "assets/img/work/homepage-cover.webp",
+        "alt": "Redesigned Hijra homepage on two phones",
+        "w": 1800,
+        "h": 945
+      },
+      "sections": [
+        {
+          "heading": "The problem: every team wanted a spot",
+          "body": [
+            "Over time, teams had each added a widget. Important promotions sat low on the page, oversized components took valuable space, and customers did not always understand the benefits they already had."
+          ]
+        },
+        {
+          "heading": "What customers told us",
+          "body": [
+            "We interviewed employees and entrepreneurs aged 25 to 35 with medium to high digital confidence and balances of up to IDR 5 million. Three themes came up again and again: unclear benefits, weak prompts to act, and features people could not find."
+          ],
+          "blocks": [
+            {
+              "type": "image",
+              "src": "assets/img/work/1135-15343-imgImage90.webp",
+              "alt": "Menu exploration and proposed solutions for the Hijra homepage",
+              "w": 1800,
+              "h": 1158,
+              "caption": "Menu exploration and proposed solutions."
+            }
+          ]
+        },
+        {
+          "heading": "Agreeing on one order",
+          "body": [
+            "Cross-team ideation and four rounds of design critique, which I facilitated with people from several divisions, turned competing requests into one order: core banking actions first, then featured services, campaigns, prayer times and spiritual wellbeing."
+          ],
+          "blocks": [
+            {
+              "type": "image",
+              "src": "assets/img/work/1135-15343-imgImage71.webp",
+              "alt": "Design critique boards from the first round to the final prototype",
+              "w": 1800,
+              "h": 1009,
+              "caption": "Four rounds of critique, from options to prototype."
+            }
+          ]
+        },
+        {
+          "heading": "Making the case for the balance section",
+          "body": [
+            "My lead and several teammates disagreed with my design for the balance section. Instead of defending it on taste, I walked them through concrete reasoning and a side-by-side comparison of the expected impact of each option. The team agreed to go with my direction."
+          ]
+        },
+        {
+          "heading": "The design: benefits people can see",
+          "body": [
+            "Essential actions stay central and relevant campaigns move up. Small motion cues, such as the free-transfer label, show value without adding clutter."
+          ],
+          "blocks": [
+            {
+              "type": "image",
+              "src": "assets/img/work/1135-15343-imgImage91.webp",
+              "alt": "The full revised Hijra homepage with grouped actions, services and campaigns",
+              "w": 751,
+              "h": 2898,
+              "caption": "The revised homepage, top to bottom. Scroll inside the frame.",
+              "tall": true
+            }
+          ]
+        },
+        {
+          "heading": "Outcome",
+          "body": [
+            "Monthly transactional users grew 12% and engagement time 8%. Follow-up feedback also showed better awareness of the benefits customers already had."
+          ]
+        },
+        {
+          "heading": "What I learned",
+          "body": [
+            "Information hierarchy is agreed before it is laid out. When the people behind competing requests help shape the order, the result lasts beyond the next roadmap."
+          ]
+        }
+      ],
+      "note": "Results as reported in the original project study.",
+      "links": [
+        [
+          "View the original Figma study",
+          "https://www.figma.com/proto/6sJv9drZxaXjDptTn8Q7Vv/Portfolio-Ridwan-Ahmad-Maarif?node-id=1135-15343&starting-point-node-id=1135%3A15343"
+        ]
+      ],
+      "part": "I reshaped the information hierarchy, designed the new homepage and facilitated four rounds of critique with people from several divisions to agree on it."
+    },
+    "hijra-first-100k": {
+      "title": "Giving people a reason to join before the bank launched",
+      "summary": "While Hijra's banking features waited for regulatory approval, research led us to everyday Islamic lifestyle features that made the app useful from the first day.",
+      "facts": [
+        [
+          "Role",
+          "Product and interaction designer"
+        ],
+        [
+          "Year",
+          "2022"
+        ],
+        [
+          "Team",
+          "Product, design, business development"
+        ],
+        [
+          "Outcome",
+          "First 100,000 users"
+        ]
+      ],
+      "cover": {
+        "src": "assets/img/work/acquisition-cover-restored.webp",
+        "alt": "Hijra's Islamic lifestyle features menu",
+        "w": 1540,
+        "h": 1021
+      },
+      "sections": [
+        {
+          "heading": "The problem: a bank without banking, for now",
+          "body": [
+            "Hijra's early product had limited banking features while approval was in progress. Research showed people had little reason to register when the features they expected were not there yet."
+          ]
+        },
+        {
+          "heading": "What people needed every day",
+          "body": [
+            "We focused on Muslim adults aged 20 to 35, including employees, entrepreneurs and students, and used interviews to find everyday needs the app could support beyond money."
+          ],
+          "blocks": [
+            {
+              "type": "image",
+              "src": "assets/img/work/1766-8177-imgImage100.webp",
+              "alt": "Research and ideation map for Hijra's early product",
+              "w": 1684,
+              "h": 950,
+              "caption": "Research synthesis and ideation."
+            }
+          ]
+        },
+        {
+          "heading": "The direction: a reason to come back",
+          "body": [
+            "The direction brought together daily prayers and dhikr, Islamic events and recordings, questions answered by experts, and clearer prayer times. We also improved Quran reading, including the move from Indo-Pak to Uthmani script."
+          ],
+          "blocks": [
+            {
+              "type": "pair",
+              "items": [
+                {
+                  "src": "assets/img/work/1766-8177-imgImage1.webp",
+                  "alt": "Hijra's recorded Islamic study screen",
+                  "w": 542,
+                  "h": 1176,
+                  "caption": "Recorded studies and events."
+                },
+                {
+                  "src": "assets/img/work/1766-8177-imgImage3.webp",
+                  "alt": "Hijra's ask-an-expert screen",
+                  "w": 542,
+                  "h": 1176,
+                  "caption": "Questions answered by experts."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Delivery in one quarter",
+          "body": [
+            "Product, design and business development shaped the direction together. The features were built over a quarter, supported by partnerships and programmes such as the Halfdeen series."
+          ]
+        },
+        {
+          "heading": "Outcome",
+          "body": [
+            "Hijra reached its first 100,000 users. It was a team milestone, supported by product work and partnerships, not by design alone."
+          ]
+        },
+        {
+          "heading": "What I learned",
+          "body": [
+            "When the expected product is not ready, research can find another reason for people to come. The strongest direction matched real motivations with what the team could deliver. Some research details remain confidential."
+          ]
+        }
+      ],
+      "note": "The 100K milestone is reported in the original project study and was a team achievement.",
+      "links": [
+        [
+          "View the original Figma study",
+          "https://www.figma.com/proto/6sJv9drZxaXjDptTn8Q7Vv/Portfolio-Ridwan-Ahmad-Maarif?node-id=1766-8177&starting-point-node-id=1766%3A8177"
+        ]
+      ],
+      "part": "I helped turn interview insights into the product direction, then designed the lifestyle features with product and business development."
+    },
+    "pertamina-hmi": {
+      "title": "Making fuel depot operations easier to read",
+      "summary": "A redesign of a legacy control screen for Pertamina's Banjarmasin fuel depot, grouped around the operator's task, with animation that shows loading progress.",
+      "facts": [
+        [
+          "Role",
+          "Product and interaction designer"
+        ],
+        [
+          "Timeline",
+          "Five-day brief"
+        ],
+        [
+          "Context",
+          "Fuel loading operations"
+        ],
+        [
+          "Platform",
+          "Desktop control screen"
+        ]
+      ],
+      "cover": {
+        "src": "assets/img/work/pertamina-cover.webp",
+        "alt": "Redesigned dark control screen with a tanker loading illustration",
+        "w": 1664,
+        "h": 1104
+      },
+      "sections": [
+        {
+          "heading": "The problem: status was there, but hard to read",
+          "body": [
+            "The legacy interface used a dated style and scattered information. Operators had to work harder to read the status of fuel loading and to see how the controls related to each other."
+          ],
+          "blocks": [
+            {
+              "type": "image",
+              "src": "assets/img/work/1254-2823-imgImage89.webp",
+              "alt": "Original Pertamina fuel depot control screen",
+              "w": 1794,
+              "h": 1058,
+              "caption": "Before: the legacy loading screen."
+            }
+          ]
+        },
+        {
+          "heading": "The design: grouped around the task",
+          "body": [
+            "I regrouped related information, removed visual clutter and used a dark interface for clearer contrast in a control room. What operators need to understand and act on during loading comes first."
+          ],
+          "blocks": [
+            {
+              "type": "image",
+              "src": "assets/img/work/1254-2823-imgImage88.webp",
+              "alt": "Redesigned Pertamina depot control screen",
+              "w": 1800,
+              "h": 1012,
+              "caption": "After: grouped controls, clear status and calm contrast."
+            }
+          ]
+        },
+        {
+          "heading": "Motion that reports progress",
+          "body": [
+            "The tanker illustration and loading animation make the process easy to follow at a glance. Here, motion reports system status; it is not decoration."
+          ]
+        },
+        {
+          "heading": "Scope and limits",
+          "body": [
+            "This was a five-day brief with about twelve hours of design work. No usability results were measured, so this case shows the reasoning rather than a quantified improvement."
+          ]
+        }
+      ],
+      "links": [
+        [
+          "View the original Figma study",
+          "https://www.figma.com/proto/6sJv9drZxaXjDptTn8Q7Vv/Portfolio-Ridwan-Ahmad-Maarif?node-id=1254-2823&starting-point-node-id=1254%3A2823"
+        ]
+      ],
+      "part": "I worked on it alone, from regrouping the information to the visual design and the loading animation."
+    },
+    "hijra-loyalty": {
+      "title": "Hijra loyalty levels",
+      "summary": "An exploration of four journey levels, Hijrah, Hamasah, Istiqomah and Qudwah, that make progress in ethical banking visible.",
+      "facts": [
+        [
+          "Role",
+          "UI and interaction design"
+        ],
+        [
+          "Type",
+          "Exploration"
+        ],
+        [
+          "Focus",
+          "Progress and motivation"
+        ],
+        [
+          "Platform",
+          "Mobile app"
+        ]
+      ],
+      "cover": {
+        "src": "assets/img/work/loyalty-cover.webp",
+        "alt": "Hijra loyalty level screens on two phones",
+        "w": 1664,
+        "h": 1104
+      },
+      "sections": [
+        {
+          "heading": "Four levels, one journey",
+          "body": [
+            "Each level explains a stage of progress in ethical banking, from Hijrah to Qudwah."
+          ]
+        },
+        {
+          "heading": "Always show the next step",
+          "body": [
+            "The level screen separates completed milestones, the current stage and the next goal. A progress bar gives each achievement context instead of a standalone badge."
+          ]
+        },
+        {
+          "heading": "Celebrate, then point forward",
+          "body": [
+            "An achievement screen marks a new level and shows the way to the next goal, in encouraging language rooted in the product's values."
+          ]
+        },
+        {
+          "heading": "Scope",
+          "body": [
+            "This is an interface exploration. No research or launch evidence exists, so no business impact is claimed."
+          ]
+        }
+      ],
+      "links": [
+        [
+          "View the original Figma study",
+          "https://www.figma.com/proto/6sJv9drZxaXjDptTn8Q7Vv/Portfolio-Ridwan-Ahmad-Maarif?node-id=1287-1300&starting-point-node-id=1287%3A1300"
+        ]
+      ],
+      "part": "The UI and interaction design of the concept."
+    },
+    "interaction-studies": {
+      "title": "Interaction studies",
+      "summary": "Five Figma motion studies across banking and operations, each exploring one small moment of feedback or discovery.",
+      "facts": [
+        [
+          "Role",
+          "Interaction design"
+        ],
+        [
+          "Tool",
+          "Figma prototypes"
+        ],
+        [
+          "Studies",
+          "Five"
+        ],
+        [
+          "Domains",
+          "Banking and operations"
+        ]
+      ],
+      "cover": {
+        "src": "assets/img/work/1254-2823-imgImage88.webp",
+        "alt": "Fuel depot interface with loading animation",
+        "w": 1800,
+        "h": 1012
+      },
+      "sections": [
+        {
+          "heading": "Fuel depot loading progress",
+          "body": [
+            "Animation that shows how far a fuel load has progressed."
+          ],
+          "blocks": [
+            {
+              "type": "image",
+              "src": "assets/img/work/1254-2823-imgImage88.webp",
+              "alt": "Fuel depot interface with loading feedback",
+              "w": 1800,
+              "h": 1012
+            }
+          ]
+        },
+        {
+          "heading": "A friendlier AI chatbot",
+          "body": [
+            "An animated character as an approachable way into a conversation."
+          ],
+          "blocks": [
+            {
+              "type": "image",
+              "src": "assets/img/work/chatbot.svg",
+              "alt": "Hijra AI chatbot character",
+              "w": 400,
+              "h": 400,
+              "small": true
+            }
+          ]
+        },
+        {
+          "heading": "Free transfers people notice",
+          "body": [
+            "A small animation that draws attention to a useful banking benefit without another banner."
+          ],
+          "blocks": [
+            {
+              "type": "image",
+              "src": "assets/img/work/homepage-cover.webp",
+              "alt": "Hijra homepage highlighting free transfers",
+              "w": 1800,
+              "h": 945
+            }
+          ]
+        },
+        {
+          "heading": "Achievement feedback",
+          "body": [
+            "Recognising progress in a financial journey at the moment it happens."
+          ],
+          "blocks": [
+            {
+              "type": "image",
+              "src": "assets/img/work/loyalty-cover.webp",
+              "alt": "Hijra loyalty achievement screen",
+              "w": 1664,
+              "h": 1104
+            }
+          ]
+        },
+        {
+          "heading": "Featured services",
+          "body": [
+            "Motion that introduces lifestyle services and invites a tap. The images here are static; open the Figma prototype to play them."
+          ],
+          "blocks": [
+            {
+              "type": "image",
+              "src": "assets/img/work/acquisition-cover-restored.webp",
+              "alt": "Hijra featured lifestyle services",
+              "w": 1540,
+              "h": 1021
+            }
+          ]
+        }
+      ],
+      "links": [
+        [
+          "Play the Figma prototypes",
+          "https://www.figma.com/proto/6sJv9drZxaXjDptTn8Q7Vv/Portfolio-Ridwan-Ahmad-Maarif?node-id=1446-1170&starting-point-node-id=1446%3A1170"
+        ]
+      ],
+      "part": "Concept and prototyping of all five studies."
+    },
+    "qurban-plus": {
+      "title": "Qurban Plus website",
+      "summary": "A homepage concept showing how qurban service information and honest storytelling can work together.",
+      "facts": [
+        [
+          "Role",
+          "UI design"
+        ],
+        [
+          "Type",
+          "Exploration"
+        ],
+        [
+          "Focus",
+          "Clarity and storytelling"
+        ],
+        [
+          "Platform",
+          "Web"
+        ]
+      ],
+      "cover": {
+        "src": "assets/img/work/qubus-cover.webp",
+        "alt": "Qurban Plus homepage concept",
+        "w": 1248,
+        "h": 731
+      },
+      "sections": [
+        {
+          "heading": "An inclusive opening message",
+          "body": [
+            "The concept opens with \"You don't have to wait until you're rich to give qurban\", then explains the offer through product information and real photos."
+          ],
+          "blocks": [
+            {
+              "type": "image",
+              "src": "assets/img/work/1403-747-imgImage.webp",
+              "alt": "Qurban Plus homepage exploration",
+              "w": 1280,
+              "h": 672,
+              "caption": "Proposed homepage."
+            }
+          ]
+        },
+        {
+          "heading": "The reference site",
+          "body": [
+            "The study also includes the longer existing site for comparison."
+          ],
+          "blocks": [
+            {
+              "type": "image",
+              "src": "assets/img/work/1403-747-imgBefore1.webp",
+              "alt": "Qurban Plus reference website",
+              "w": 977,
+              "h": 4096,
+              "caption": "Reference site, full length. Scroll inside the frame.",
+              "tall": true
+            }
+          ]
+        },
+        {
+          "heading": "Scope",
+          "body": [
+            "A visual exploration without research findings or launch metrics, so no business impact is claimed."
+          ]
+        }
+      ],
+      "links": [
+        [
+          "View the original Figma study",
+          "https://www.figma.com/proto/6sJv9drZxaXjDptTn8Q7Vv/Portfolio-Ridwan-Ahmad-Maarif?node-id=1403-747&starting-point-node-id=1403%3A747"
+        ]
+      ],
+      "part": "The UI design of the homepage concept."
+    },
+    "compfest-ux-academy": {
+      "title": "Judging the COMPFEST 16 UX Academy",
+      "summary": "I judged the User Experience Academy at COMPFEST 16, Universitas Indonesia's annual technology festival, evaluating five teams of emerging designers.",
+      "facts": [
+        [
+          "Role",
+          "Judge"
+        ],
+        [
+          "Dates",
+          "2 to 18 August 2024"
+        ],
+        [
+          "Event",
+          "COMPFEST 16, Universitas Indonesia"
+        ],
+        [
+          "Participants",
+          "Five teams of five"
+        ]
+      ],
+      "cover": {
+        "src": "assets/img/work/1162-4404-imgImage82.webp",
+        "alt": "Certificate for Ridwan's role as a COMPFEST UX Academy judge",
+        "w": 1800,
+        "h": 1272
+      },
+      "sections": [
+        {
+          "heading": "The event",
+          "body": [
+            "COMPFEST is organised every year by students of the Faculty of Computer Science at Universitas Indonesia. The 2024 User Experience Academy ran from 2 to 18 August with five teams of five participants."
+          ],
+          "blocks": [
+            {
+              "type": "pair",
+              "items": [
+                {
+                  "src": "assets/img/work/1162-4404-imgImage2.webp",
+                  "alt": "User Experience Academy judges announcement",
+                  "w": 1080,
+                  "h": 1350
+                },
+                {
+                  "src": "assets/img/work/1162-4404-imgImage1.webp",
+                  "alt": "COMPFEST 2024 judging panel",
+                  "w": 1080,
+                  "h": 1350
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "My role",
+          "body": [
+            "I evaluated the teams' work with a product lens, looking for clear problem framing, evidence and decisions, not only polish. This entry records the contribution; it does not claim a measured learning outcome."
+          ]
+        }
+      ],
+      "links": [
+        [
+          "Verify the certificate",
+          "https://verify.compfest.id/cf-2024-01948cda-8466-7000-aa25-a553a5f160a9"
+        ],
+        [
+          "View the original Figma study",
+          "https://www.figma.com/proto/6sJv9drZxaXjDptTn8Q7Vv/Portfolio-Ridwan-Ahmad-Maarif?node-id=1162-4404&starting-point-node-id=1162%3A4404"
+        ]
+      ]
+    }
+  }
+}
