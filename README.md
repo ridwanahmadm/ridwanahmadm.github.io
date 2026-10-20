@@ -9,14 +9,14 @@ A static site with no framework and no runtime dependencies: HTML, CSS and ES mo
 
 ```
 DESIGN.md               Design contract: tokens, layout, motion and writing rules (read first)
-index.html              Home: hero, selected work, Siiru up close, product film, AI, about, contact
+index.html              Home: hero, selected work, Siiru up close, product films, how I lead, AI, about, contact
 work/*.html             Case studies (generated, don't edit by hand)
 content/cases.json      Source for every case study
 tools/build.mjs         Generates work/*.html and sitemap.xml from content/cases.json
 tools/serve.mjs         Tiny local preview server
 assets/css/site.css     All styles
-assets/js/site.js       All behaviour (~4 KB): video autoplay, Siiru viewer, film player, page transitions
-assets/media/           Siiru film (ID-EN), captions, app screen recordings
+assets/js/site.js       All behaviour: hover previews, play buttons, Siiru viewer, film players, page transitions
+assets/media/           Siiru (ID-EN) and Mahabbati (EN) films, captions, promo, app recordings
 404.html, works.html    Not-found page and legacy redirect
 ```
 

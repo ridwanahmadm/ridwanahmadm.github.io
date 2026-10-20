@@ -2,6 +2,7 @@
   "_help": "Source for every page in /work. Edit here, then run: node tools/build.mjs. Writing rules live in DESIGN.md.",
   "order": [
     "siiru",
+    "mahabbati",
     "hijra-ekyc",
     "hijra-homepage",
     "hijra-first-100k",
@@ -971,6 +972,227 @@
         [
           "View the original Figma study",
           "https://www.figma.com/proto/6sJv9drZxaXjDptTn8Q7Vv/Portfolio-Ridwan-Ahmad-Maarif?node-id=1162-4404&starting-point-node-id=1162%3A4404"
+        ]
+      ]
+    },
+    "mahabbati": {
+      "title": "Mahabbati: a ta'aruf app with an AI matchmaker",
+      "summary": "Mahabbati helps Muslims find a spouse through ta'aruf, the Islamic way of getting to know someone for marriage, and then prepare for the wedding itself. Its flagship is an AI matchmaker that turns a few words about the person you hope for into ranked, verified matches.",
+      "part": "I designed the whole app as a freelance product designer in 2026, from the AI matchmaker to verification, membership, pre-marriage learning and the wedding organizer. I also directed and built its company profile film and vertical promo.",
+      "facts": [
+        [
+          "Role",
+          "Product designer, freelance"
+        ],
+        [
+          "Year",
+          "2026"
+        ],
+        [
+          "Scope",
+          "Mobile app, films, microsite"
+        ],
+        [
+          "Status",
+          "Live on Google Play"
+        ]
+      ],
+      "cover": {
+        "stills": [
+          "assets/img/mahabbati/ai.jpg",
+          "assets/img/mahabbati/home.jpg",
+          "assets/img/mahabbati/kandidat.jpg"
+        ],
+        "poster": "assets/media/mahabbati-film-poster.jpg",
+        "alt": "Three Mahabbati app screens: the AI search, the home screen with match scores, and a candidate's compatibility"
+      },
+      "sections": [
+        {
+          "heading": "The problem: ta'aruf left hanging",
+          "body": [
+            "Ta'aruf is meant to be calm and intentional. On many apps, a request is read and never answered, the quota it used is gone, and there is no easy way to tell whether a profile is real.",
+            "Mahabbati's own Google Play reviews and Instagram comments raised the same worries: paying for requests that go nowhere, and how to know a candidate is genuine. The design answers each of them."
+          ]
+        },
+        {
+          "heading": "The flagship: an AI matchmaker",
+          "body": [
+            "Instead of a long filter form, people describe who they hope for in their own words, such as \"patient and prays five times a day\". The AI suggests criteria to refine the search and returns ranked recommendations, each with a match percentage.",
+            "On a candidate's page, the score never stands alone. It is labelled with what it means and what it is based on: verified profiles and sharia-aligned criteria. A high number invites a closer look; it does not make the decision."
+          ],
+          "blocks": [
+            {
+              "type": "screens",
+              "items": [
+                [
+                  "assets/img/mahabbati/ai.jpg",
+                  "AI search",
+                  "Plain-language criteria, suggested filters and 11 ranked matches."
+                ],
+                [
+                  "assets/img/mahabbati/home.jpg",
+                  "Home",
+                  "\"You might match\" cards carry the match score from the first screen."
+                ],
+                [
+                  "assets/img/mahabbati/kandidat.jpg",
+                  "Candidate detail",
+                  "An 89% compatibility score with its reason, before any request is sent."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Ta'aruf with a deadline",
+          "body": [
+            "Every request has a clear deadline. If there is no reply within seven days, it is cancelled automatically and the quota comes back. The Ta'arufku screen shows how much time is left on each request, so nobody waits without knowing."
+          ],
+          "blocks": [
+            {
+              "type": "screens",
+              "items": [
+                [
+                  "assets/img/mahabbati/taarufku.jpg",
+                  "Ta'arufku",
+                  "Incoming, sent and ongoing requests, each with the days left before it closes."
+                ],
+                [
+                  "assets/img/mahabbati/biodata.jpg",
+                  "Profile, step by step",
+                  "Fill in everything now, or just enough to start and finish later."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Trust and privacy, by design",
+          "body": [
+            "Every user goes through the same check, local or international: an e-KTP for Indonesians or a passport for everyone else, plus a selfie. Women's photos are reviewed only by female admins. Candidate cards use illustrated avatars, and a real photo opens for 24 hours only after a request is accepted, without a download option."
+          ],
+          "blocks": [
+            {
+              "type": "screens",
+              "items": [
+                [
+                  "assets/img/mahabbati/en_capture.jpg",
+                  "Passport capture",
+                  "International users verify with a passport, in the same flow as everyone else."
+                ],
+                [
+                  "assets/img/mahabbati/en_final.jpg",
+                  "Ready for review",
+                  "A clear summary before the details go to the admin team."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "From introduction to walimah",
+          "body": [
+            "Mahabbati keeps going after the match. Members prepare through classes and a pre-marriage exam with a certificate, keep up with daily duas and prayer times, and can book a sharia wedding organizer in the same app. Membership tiers decide how many requests and benefits each member gets."
+          ],
+          "blocks": [
+            {
+              "type": "screens",
+              "items": [
+                [
+                  "assets/img/mahabbati/ujian_hasil.jpg",
+                  "Pre-marriage exam",
+                  "A score, a certificate and the lessons to review next."
+                ],
+                [
+                  "assets/img/mahabbati/kajian.jpg",
+                  "Classes",
+                  "Short lessons from teachers, with an audio version."
+                ],
+                [
+                  "assets/img/mahabbati/gold.jpg",
+                  "Membership",
+                  "What each tier unlocks, and how many requests are left."
+                ],
+                [
+                  "assets/img/mahabbati/wo_detail.jpg",
+                  "Wedding organizer",
+                  "Packages with what is included, down to catering and crew."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "The films",
+          "body": [
+            "To introduce the app, I directed and built an 88-second company profile in Remotion, in Indonesian, English and Arabic, which reads right to left. A 45-second vertical promo for Reels and TikTok follows a problem, agitation and solution arc taken from real reviews: a request left on read, a quota lost, then the quota coming back."
+          ],
+          "blocks": [
+            {
+              "type": "film",
+              "film": "mahabbati"
+            },
+            {
+              "type": "vertical",
+              "src": "assets/media/mahabbati-promo-en.mp4",
+              "poster": "assets/media/mahabbati-promo-en.jpg",
+              "label": "Mahabbati 45-second vertical promo, English edition, with captions on screen"
+            }
+          ]
+        },
+        {
+          "heading": "Beyond the app",
+          "body": [
+            "With AI as a pair programmer, I also designed and built Mahabbati's acquisition microsite for the app and its wedding organizer."
+          ],
+          "blocks": [
+            {
+              "type": "builds",
+              "items": [
+                [
+                  "https://ridwanahmadm.github.io/Mahabbati/",
+                  "assets/img/proto/mahabbati.jpg",
+                  "Mahabbati microsite",
+                  "For people still searching and couples ready to marry"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Mahabbati's impact so far",
+          "body": [
+            "These are company figures, shared for scale. They belong to the whole Mahabbati team."
+          ],
+          "blocks": [
+            {
+              "type": "stats",
+              "items": [
+                [
+                  "10+",
+                  "couples married through the Mahabbati wedding organizer"
+                ],
+                [
+                  "4.7",
+                  "rating on Google Play"
+                ],
+                [
+                  "10.9K",
+                  "followers on Instagram"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        [
+          "Get Mahabbati on Google Play",
+          "https://play.google.com/store/apps/details?id=com.kasministudio.mahabbatimobile"
+        ],
+        [
+          "Visit the microsite",
+          "https://ridwanahmadm.github.io/Mahabbati/"
         ]
       ]
     }

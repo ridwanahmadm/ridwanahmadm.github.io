@@ -21,17 +21,42 @@ if (top) {
 const hero = $('.hero');
 if (hero) requestAnimationFrame(() => requestAnimationFrame(() => hero.classList.add('is-in')));
 
-// Product videos play only while on screen.
-const autoplay = $$('video[data-autoplay]');
-if (autoplay.length && !reduce && 'IntersectionObserver' in window) {
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(({ target: v, isIntersecting }) => {
-      if (v.dataset.manual) return;
-      if (isIntersecting) { v.preload = 'auto'; v.play().catch(() => {}); } else v.pause();
-    });
-  }, { threshold: 0.25 });
-  autoplay.forEach((v) => { v.muted = true; io.observe(v); });
-}
+// Media moves only when someone asks for it: no autoplay, no endless loops
+// (WCAG 2.2.2 and NN/g). Posters carry the page until then.
+const fine = matchMedia('(pointer: fine)').matches;
+const ICON_PLAY = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.6-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg>';
+const ICON_PAUSE = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>';
+const setBtn = (btn, state, name) => {
+  btn.dataset.state = state;
+  btn.innerHTML = state === 'playing' ? ICON_PAUSE : ICON_PLAY;
+  const verb = state === 'playing' ? 'Pause' : state === 'ended' ? 'Replay' : 'Play';
+  btn.setAttribute('aria-label', `${verb} screen recording: ${name}`);
+};
+const playOnce = (v) => { v.loop = false; v.muted = true; v.preload = 'auto'; if (v.ended) v.currentTime = 0; v.play().catch(() => {}); };
+const toggle = (v) => (v.paused || v.ended ? playOnce(v) : v.pause());
+const follow = (v, btn, name, isActive = () => true) => {
+  const sync = () => { if (isActive()) setBtn(btn, v.ended ? 'ended' : v.paused ? 'paused' : 'playing', name); };
+  ['play', 'pause', 'ended'].forEach((ev) => v.addEventListener(ev, sync));
+};
+
+// Project rows: a quiet preview while the pointer rests on the row (desktop only).
+if (fine && !reduce) $$('[data-preview]').forEach((box) => {
+  const vids = $$('video', box);
+  const host = box.closest('a') || box;
+  host.addEventListener('pointerenter', () => vids.forEach((v) => { v.muted = true; v.loop = true; v.preload = 'auto'; v.play().catch(() => {}); }));
+  host.addEventListener('pointerleave', () => vids.forEach((v) => { v.pause(); v.load(); }));
+});
+
+// Screen recordings: a visible play and pause button on each one.
+$$('[data-clip]').forEach((box) => {
+  const v = $('video', box);
+  const btn = $('.clip-btn', box);
+  if (!v || !btn) return;
+  const name = box.dataset.clip;
+  setBtn(btn, 'paused', name);
+  follow(v, btn, name);
+  btn.addEventListener('click', () => toggle(v));
+});
 
 // Siiru, up close: one open design at a time, mirrored on the phone.
 const viewer = $('.viewer');
@@ -39,44 +64,40 @@ if (viewer) {
   const buttons = $$('.design > button', viewer);
   const screens = $$('.viewer-stage video', viewer);
   const stage = $('.viewer-stage', viewer);
+  const stageBtn = $('.viewer-stage .clip-btn', viewer);
+  const names = buttons.map((b) => b.textContent.trim());
   const stageVisible = () => stage && stage.offsetParent !== null;
-  const open = (i) => {
+  let current = 0;
+  screens.forEach((v, k) => follow(v, stageBtn, names[k], () => k === current));
+  const open = (i, fromUser) => {
+    current = i;
     buttons.forEach((b, k) => b.setAttribute('aria-expanded', String(k === i)));
     screens.forEach((v, k) => {
-      const on = k === i;
-      v.classList.toggle('is-on', on);
-      if (on && stageVisible() && !reduce) { v.preload = 'auto'; v.currentTime = 0; v.play().catch(() => {}); } else v.pause();
+      v.classList.toggle('is-on', k === i);
+      if (k !== i) { v.pause(); if (v.currentTime) v.load(); }
     });
+    $$('.design-body video', viewer).forEach((v) => v.pause());
+    if (stageBtn) setBtn(stageBtn, 'paused', names[i]);
+    if (fromUser && stageVisible() && !reduce) playOnce(screens[i]);
   };
-  buttons.forEach((b, i) => b.addEventListener('click', () => open(i)));
-  if (stage) new IntersectionObserver(([en]) => {
-    const v = screens.find((s) => s.classList.contains('is-on'));
-    if (!v || reduce || !stageVisible()) return;
-    en.isIntersecting ? v.play().catch(() => {}) : v.pause();
-  }).observe(stage);
-  open(0);
+  buttons.forEach((b, i) => b.addEventListener('click', () => open(i, true)));
+  if (stageBtn) stageBtn.addEventListener('click', () => toggle(screens[current]));
+  open(0, false);
 }
 
-// Product film: teaser loop until the visitor presses play.
-const film = $('[data-film]');
-if (film) {
+// Product films: the native player stays as the no-JS fallback; with JS a
+// single "Play" button starts the full film with sound and captions.
+$$('[data-film]').forEach((film) => {
   const video = $('video', film);
   const play = $('.film-play', film);
-  const chapters = $$('[data-at]');
+  const item = film.closest('.film-item') || document;
+  const chapters = $$('[data-at]', item);
+  video.controls = false;
   let started = false;
   const start = (at = 0) => {
-    if (!started) {
-      started = true;
-      video.dataset.manual = '1';
-      video.pause();
-      video.loop = false;
-      video.src = film.dataset.src;
-      const track = Object.assign(document.createElement('track'), { kind: 'captions', srclang: 'en', label: 'English', src: film.dataset.captions, default: true });
-      video.append(track);
-      video.muted = false;
-      video.controls = true;
-      film.classList.add('is-playing');
-    }
+    $$('[data-film] video').forEach((other) => { if (other !== video) other.pause(); });
+    if (!started) { started = true; video.controls = true; film.classList.add('is-playing'); }
+    video.preload = 'auto';
     const go = () => { video.currentTime = at; video.play().catch(() => {}); };
     video.readyState >= 1 ? go() : video.addEventListener('loadedmetadata', go, { once: true });
   };
@@ -89,7 +110,7 @@ if (film) {
     times.forEach((t, i) => { if (video.currentTime >= t) idx = i; });
     chapters.forEach((b, i) => b.setAttribute('aria-current', String(i === idx)));
   });
-}
+});
 
 // Page transitions: the clicked cover morphs into the case-study cover.
 $$('[data-vt]').forEach((media) => {

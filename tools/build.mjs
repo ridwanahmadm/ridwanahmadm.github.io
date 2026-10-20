@@ -11,29 +11,41 @@ const { order, cases } = JSON.parse(readFileSync(join(root, 'content/cases.json'
 const esc = (s = '') => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const rel = (p) => (/^(https?:|mailto:|#|\.\.\/)/.test(p) ? p : `../${p}`);
 
-const phone = (name) => `<div class="phone"><div class="phone-screen"><video src="../assets/media/app-${name}.mp4" poster="../assets/media/app-${name}.jpg" muted loop playsinline preload="none" data-autoplay></video></div></div>`;
+// Screen recordings never autoplay: each has a visible play/pause button (WCAG 2.2.2).
+const phone = (name) => `<div class="phone"><div class="phone-screen"><video src="../assets/media/app-${name}.mp4" poster="../assets/media/app-${name}.jpg" muted playsinline preload="none"></video></div></div>`;
+const clip = (name, label) => `<div class="phone" data-clip="${esc(label)}"><div class="phone-screen"><video src="../assets/media/app-${name}.mp4" poster="../assets/media/app-${name}.jpg" muted playsinline preload="none"></video></div><button class="clip-btn" type="button"></button></div>`;
+const still = (img) => `<div class="phone"><div class="phone-screen"><img src="${rel(img)}" alt="" loading="lazy" decoding="async"></div></div>`;
 
 const fig = (b) => `<figure class="fig${b.small ? ' is-small' : ''}">
           <div class="fig-frame${b.tall ? ' is-tall' : ''}"${b.tall ? ' tabindex="0" role="region" aria-label="' + esc(b.alt) + ', scrollable"' : ''}><img src="${rel(b.src)}" alt="${esc(b.alt)}" width="${b.w}" height="${b.h}" loading="lazy" decoding="async"></div>${b.caption ? `
           <figcaption>${esc(b.caption)}</figcaption>` : ''}
         </figure>`;
 
-const FILM = `<div class="film" data-film data-src="../assets/media/siiru-showreel-id-en.mp4" data-captions="../assets/media/siiru-showreel-en.vtt" style="margin-top:28px;width:min(980px,calc(100vw - 2 * var(--gutter)))">
-          <video src="../assets/media/siiru-showreel-teaser.mp4" poster="../assets/media/siiru-showreel-poster.jpg" muted loop playsinline preload="none" data-autoplay aria-label="Siiru product film, Indonesia edition in English"></video>
-          <button class="film-play" type="button"><span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.6-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg>Play the film (2:00)</span></button>
-        </div>`;
+const PLAY = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.6-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg>';
+const FILMS = {
+  siiru: { src: 'assets/media/siiru-showreel-id-en.mp4', poster: 'assets/media/siiru-showreel-poster.jpg', vtt: 'assets/media/siiru-showreel-en.vtt', label: 'Siiru product film, Indonesia edition in English', play: 'Play the film (2:00)' },
+  mahabbati: { src: 'assets/media/mahabbati-film-en.mp4', poster: 'assets/media/mahabbati-film-poster.jpg', vtt: 'assets/media/mahabbati-film-en.vtt', label: 'Mahabbati company profile, English edition', play: 'Play the film (1:29)' },
+};
+const film = (key) => { const f = FILMS[key]; return `<div class="film" data-film style="margin-top:28px;width:min(980px,calc(100vw - 2 * var(--gutter)))">
+          <video src="${rel(f.src)}" poster="${rel(f.poster)}" controls playsinline preload="none" aria-label="${esc(f.label)}"><track kind="captions" srclang="en" label="English" src="${rel(f.vtt)}" default></video>
+          <button class="film-play" type="button"><span>${PLAY}${esc(f.play)}</span></button>
+        </div>`; };
 
 function block(b) {
   switch (b.type) {
     case 'image': return fig(b);
     case 'pair': return `<div class="pair">${b.items.map(fig).join('')}</div>`;
     case 'phones': return `<div class="phones" style="--n:${b.items.length}">
-          ${b.items.map(([v, t, d]) => `<figure>${phone(v)}<figcaption><strong>${esc(t)}</strong>${esc(d)}</figcaption></figure>`).join('\n          ')}
+          ${b.items.map(([v, t, d]) => `<figure>${clip(v, t)}<figcaption><strong>${esc(t)}</strong>${esc(d)}</figcaption></figure>`).join('\n          ')}
         </div>`;
+    case 'screens': return `<div class="phones phones--lavender" style="--n:${b.items.length}">
+          ${b.items.map(([img, t, d]) => `<figure>${still(img)}<figcaption><strong>${esc(t)}</strong>${esc(d)}</figcaption></figure>`).join('\n          ')}
+        </div>`;
+    case 'vertical': return `<div class="vertical"><video src="${rel(b.src)}" poster="${rel(b.poster)}" controls playsinline preload="none" aria-label="${esc(b.label)}"></video></div>`;
     case 'stats': return `<dl class="stats" style="--n:${b.items.length}">${b.items.map(([v, l]) => `<div><dt>${esc(v)}</dt><dd>${esc(l)}</dd></div>`).join('')}</dl>`;
     case 'modes': return `<dl class="modes">${b.items.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>`;
     case 'note': return `<div class="note"><p>${esc(b.text)}</p></div>`;
-    case 'film': return FILM;
+    case 'film': return film(b.film || 'siiru');
     case 'builds': return `<div class="builds" style="grid-template-columns:repeat(${b.items.length},1fr);margin-top:28px">${b.items.map(([href, img, t, d]) => `<a class="build" href="${href}" rel="noopener">
             <div class="build-shot"><img src="${rel(img)}" alt="${esc(t)}" loading="lazy" decoding="async"></div>
             <span class="t">${esc(t)}</span><span class="meta">${esc(d)}</span>
@@ -44,7 +56,8 @@ function block(b) {
 
 function cover(slug, c) {
   const vt = `style="view-transition-name: cover-${slug}"`;
-  if (c.plate) return `<div class="cover" ${vt}><div class="plate" role="img" aria-label="${esc(c.alt)}">${c.plate.map(phone).join('')}</div></div>`;
+  if (c.plate) return `<div class="cover" ${vt}><div class="plate" data-preview role="img" aria-label="${esc(c.alt)}">${c.plate.map(phone).join('')}</div></div>`;
+  if (c.stills) return `<div class="cover" ${vt}><div class="plate plate--lavender" role="img" aria-label="${esc(c.alt)}">${c.stills.map(still).join('')}</div></div>`;
   return `<div class="cover" ${vt}><img src="${rel(c.src)}" alt="${esc(c.alt)}" width="${c.w}" height="${c.h}" fetchpriority="high" decoding="async"></div>`;
 }
 
@@ -52,7 +65,7 @@ function page(slug, i) {
   const c = cases[slug];
   const nextSlug = order[(i + 1) % order.length];
   const next = cases[nextSlug];
-  const ogImage = c.cover.plate ? `${SITE}/${c.cover.poster}` : `${SITE}/${c.cover.src}`;
+  const ogImage = `${SITE}/${c.cover.poster || c.cover.src}`;
   const sections = c.sections.map((s) => `<section class="case-section">
         <h2>${esc(s.heading)}</h2>
         ${(s.body || []).map((p) => `<p>${esc(p)}</p>`).join('\n        ')}
@@ -128,7 +141,7 @@ function page(slug, i) {
   <footer class="contact" id="contact" aria-labelledby="contact-title">
     <div class="wrap">
       <h2 class="display" id="contact-title">Think we'd make a great team?</h2>
-      <p>I'm exploring Lead Product Designer and Design Manager roles, and thoughtful collaborations.</p>
+      <p>I'm exploring Lead Product Designer or Sr. Product Designer roles, and thoughtful collaborations.</p>
       <p class="links">
         <a class="link" href="mailto:hellomaarif@gmail.com">hellomaarif@gmail.com</a>
         <a class="link" href="https://www.linkedin.com/in/ridwanam/" rel="noopener">LinkedIn</a>

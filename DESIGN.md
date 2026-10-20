@@ -46,7 +46,7 @@ Every text/background pair passes AA with margin: 4.5:1 for normal text, 3:1 for
 
 ## Layout
 
-12-column grid, 1240px max, left-aligned. Sections are introduced by a plain, descriptive H2 (no eyebrow). Work items are rows: text in 4 columns, media in 8, separated by a hairline. Mobile is one column with 16px gutters.
+12-column grid, 1240px max, left-aligned. Sections are introduced by a plain, descriptive H2 (no eyebrow). Work items are rows: text in 4 columns, media in 7, separated by space rather than rules. Hairlines are kept only where they encode structure: tables, the Siiru list, the facts row and the More work divider. Mobile is one column with 16px gutters.
 
 ```
 Ridwan Ahmad Ma'arif                          Work  About  Contact
@@ -69,14 +69,19 @@ Think we'd make a great team?   (deep band) email, LinkedIn
 
 ## Motion
 
-Purpose first (NN/g): continuity on user action, never decoration while reading.
+Purpose first (NN/g), checked against the Mahabbati research doc (§5) on 2026-10-20.
 
-1. **One page-load sequence** on the home hero: lines rise 12px and fade in, 400ms, 70ms stagger. Nothing else animates on scroll.
-2. **User-triggered:** switching a Siiru design cross-fades the screen (300ms); opening the film fades the poster (200ms).
-3. **Page transitions:** cross-document View Transitions — 250ms cross-fade, and the clicked cover morphs into the case-study cover (400ms).
-4. **Micro:** links change underline colour within 150ms.
+1. **One page-load sequence** on the home hero: name, statement, lead and photo fade in and rise 12px, 400ms, 70ms stagger, done within 1.2s. Nothing else animates on scroll.
+2. **No autoplay, no endless loops** (WCAG 2.2.2, NN/g homepage). Posters carry the page. Project rows preview their recordings only while a fine pointer rests on them, and return to the poster on leave. Every screen recording has a visible 44px play/pause button and plays once. Films start only from their Play button, with captions; starting one film pauses the other.
+3. **User-triggered:** opening a Siiru design plays that screen once and slides its label 22px with `transform` (never padding or other layout properties).
+4. **Page transitions:** cross-document View Transitions, 250ms cross-fade, and the clicked cover morphs into the case-study cover (400ms).
+5. **Micro:** links change underline colour within 150ms; buttons press to 0.94 scale in 140ms.
 
-Easing `cubic-bezier(.2,.7,.2,1)`. Every duration ≤ 400ms. Product videos play only while visible. `prefers-reduced-motion` removes all of the above.
+Easing `cubic-bezier(.2,.7,.2,1)`. Every UI duration ≤ 400ms. `prefers-reduced-motion` removes all of the above.
+
+## Hero
+
+The name is the H1 (NN/g: say who you are first; one or two lines at display size). The positioning sentence sits below it at 22–28px, then the domains line. A full sentence at display size is a known generated-page tell, so it is not used.
 
 ## Writing
 
