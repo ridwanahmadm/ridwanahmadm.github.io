@@ -1143,7 +1143,7 @@
         {
           "heading": "Beyond the app",
           "body": [
-            "With AI as a pair programmer, I also designed and built Mahabbati's acquisition microsite for the app and its wedding organizer."
+            "With AI as a pair programmer, I also designed and built Mahabbati's microsite for its sharia wedding organizer, with a path into the ta'aruf app for people still searching."
           ],
           "blocks": [
             {
@@ -1153,7 +1153,7 @@
                   "https://ridwanahmadm.github.io/Mahabbati/",
                   "assets/img/proto/mahabbati.jpg",
                   "Mahabbati microsite",
-                  "For people still searching and couples ready to marry"
+                  "Sharia wedding organizer, from khitbah to walimah"
                 ]
               ]
             }
